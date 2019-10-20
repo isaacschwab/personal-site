@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.textContainer {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.bio {
+
+}
+
+.extras {
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    padding: $gap;
+  }
+
+  .itemFlip {
+    display: flex;
+    flex-flow: row wrap;
+    padding: $gap;
+
+    @media screen and (min-width: $medium) {
+      flex-flow: row-reverse wrap;
+    }
+  }
+
+  .text {
+    width: 100%;
+    @media screen and (min-width: $medium) {
+      width: 70%;
+    }
+  }
+
+  .visual {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+    @media screen and (min-width: $medium) {
+      width: 30%;
+    }
+    
+  }
+}
+
+.flipped {
+  align-items: flex-end;
+}
+
+
+
+
+
+.hobbies {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.link {
+  color: $white;
+  text-transform: uppercase;
+  margin: $gap/2;
+}
+
+.icon {
+  margin: 0 $gap/2;
+}
+
+.icons {
+  // display: flex;
+  // flex-flow: row nowrap;
+  // width: 100%;
+  // justify-content: space-between;
+}
