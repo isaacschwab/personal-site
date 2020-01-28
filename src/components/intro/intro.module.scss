@@ -2,7 +2,10 @@
   font-size: $textLarge;
 
   .name {
-    font-size: $textXLarge;
+    font-size: $textLarger;
+    @media screen and (min-width: $medium) {
+      font-size: $textXLarge;
+    }
   }
 }
 

@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: $footerLogoWidth;
+  margin: $gap/2;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: $textSmall;
+}
