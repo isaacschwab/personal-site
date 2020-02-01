@@ -623,5 +623,13 @@ pre tt:after {
 }
 
 .component {
-  padding: $gapLarge 0;
+  padding: ($gapLarge / 2) 0;
+
+  @media screen and (min-width: $medium) {
+    padding: $gapLarge 0;
+  }
+}
+
+a {
+  color: $highlight;
 }

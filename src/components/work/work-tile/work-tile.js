@@ -19,15 +19,14 @@ class WorkTile extends Component {
   render() {
     return (
       <div className={style.item} onClick={this.onClick}>
-        {this.state.open &&
-          <Img
-            fluid={this.props.image}
-          />
-        }
+        {/* <Img
+          fluid={this.props.image}
+          className={this.state.open ? `${style.open}` : ``}
+        /> */}
+        <img className={style.icon} src={this.props.image} alt="Graphic icon of a camera, representing photography"></img>
         <h3 className={style.itemName}>{this.props.title}</h3>
-        {this.state.open &&
-          <div>{this.props.desc}</div>
-        }
+        <div className={style.desc}>{this.props.desc}</div>
+        <a href={this.props.url} target="_blank" rel="noopener noreferrer">View {this.props.title}.</a>
       </div>
     )
   }

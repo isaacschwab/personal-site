@@ -4,6 +4,10 @@
 
 .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+
+  @media screen and (min-width: $medium) {
+    flex-flow: row nowrap;
+  }
 }

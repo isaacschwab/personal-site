@@ -2,15 +2,15 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  width: 30%;
+  align-items: center;
+  width: 100%;
   border: 2px solid $white;
   margin: $gap;
+  padding: $gap;
 
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   padding-bottom: 50%;
-  // }
+  @media screen and (min-width: $medium) {
+    width: 30%;
+  }
 }
 
 .itemName {
@@ -18,4 +18,18 @@
   text-align: center;
   margin: 0;
   // padding-top: 50%;
+}
+
+.open {
+  opacity: 0;
+}
+
+.icon {
+  width: 60px;
+}
+
+.desc {
+  text-align: center;
+  font-size: $textSmall;
+  padding-top: $gap;
 }

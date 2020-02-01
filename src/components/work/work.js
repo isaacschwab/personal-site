@@ -4,6 +4,10 @@ import React from "react"
 import Img from "gatsby-image"
 import WorkTile from "./work-tile"
 
+import soupImage from "../../images/soup.svg"
+import barImage from "../../images/protein-bar.svg"
+import climbImage from "../../images/climbing.svg"
+
 import style from "./work.module.scss"
 
 const Work = () => {
@@ -39,18 +43,21 @@ const Work = () => {
       <div className={style.container}>
         <WorkTile
           title={'Progresso Soups'}
-          desc={'A Gatsby + Wordpress solution that consumes recipe and product data from internal APIs'}
-          image={data.progresso.childImageSharp.fluid}
+          desc={'A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.'}
+          image={soupImage}
+          url={'https://www.progresso.com/'}
         />
         <WorkTile
           title={'Chex Mix'}
-          desc={'A Gatsby + Wordpress solution that consumes recipe and product data from internal APIs'}
-          image={data.chexmix.childImageSharp.fluid}
+          desc={'A Wordpress solution that has product unique patterns throughout the site.'}
+          image={barImage}
+          url={'https://www.chexmix.com/'}
         />
         <WorkTile
           title={'Larabar Canada'}
-          desc={'A Gatsby + Wordpress solution that consumes recipe and product data from internal APIs'}
-          image={data.larabar.childImageSharp.fluid}
+          desc={'A multilingual Wordpress solution with bright colors, fun imagery, and a two tier navigation menu.'}
+          image={barImage}
+          url={'https://www.larabar.ca/'}
         />
       </div>
     </section>

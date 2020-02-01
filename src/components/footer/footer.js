@@ -24,10 +24,10 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={style.social}>
-        <a href={data.site.siteMetadata.social.github} target="_blank">
+        <a href={data.site.siteMetadata.social.github} target="_blank" rel="noopener noreferrer">
           <img className={style.logo} src={githubImage} alt="GitHub Logo"></img>
         </a>
-        <a href={data.site.siteMetadata.social.instagram} target="_blank">
+        <a href={data.site.siteMetadata.social.instagram} target="_blank" rel="noopener noreferrer">
           <img className={style.logo} src={instagramImage} alt="Instagram Logo"></img>
         </a>
       </div>

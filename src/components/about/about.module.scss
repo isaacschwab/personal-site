@@ -14,7 +14,7 @@
 }
 
 .link {
-  color: $highlight;
+  font-size: $textMedium;
 }
 
 .icon {
@@ -33,6 +33,10 @@
   justify-content: space-between;
   flex-flow: row wrap;
   padding-bottom: $gap;
+
+  @media screen and (min-width: $medium) {
+    padding-bottom: $gap*2;
+  }
 
   &.visualTextFlipped {
     flex-flow: row-reverse wrap;
