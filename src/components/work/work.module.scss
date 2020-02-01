@@ -7,25 +7,3 @@
   flex-flow: row nowrap;
   justify-content: space-around;
 }
-
-.item {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  width: 30%;
-  border: 2px solid $white;
-  margin: $gap;
-
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 50%;
-  }
-}
-
-.itemName {
-  font-size: $textMedium;
-  text-align: center;
-  margin: 0;
-  padding-top: 50%;
-}
