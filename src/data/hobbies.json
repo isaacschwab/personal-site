@@ -1,0 +1,18 @@
+[
+  {
+    "title" : "Skiing in Big Sky",
+    "description" : "Fresh powder run in the Gullies of Lone Peak, Big Sky, Montana",
+    "image" : {
+      "src" : "../images/hobbies/bigsky.jpg",
+      "alt" : "Skiing"
+    }
+  },
+  {
+    "title" : "Mountain biking",
+    "description" : "Cascade, Grand Marais, Minnesota",
+    "image" : {
+      "src" : "../images/hobbies/biking.jpg",
+      "alt" : "Biking"
+    }
+  }
+]

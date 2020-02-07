@@ -8,7 +8,7 @@ import Work from "../components/work"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Isaac Schwab" />
     <Intro></Intro>
     <About></About>
     <Work></Work>

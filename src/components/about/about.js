@@ -55,7 +55,7 @@ const About = () => {
                 Outside of work I have a variety of side projects that I like to tinker with when I have time.
                 This includes web and game development, design, and photography.
                 <br></br>
-                <Link className={style.link}>View my side projects.</Link>
+                <Link to={'/projects'} className={style.link}>View my side projects.</Link>
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const About = () => {
                 I also like to get away from a screen and get some activity. I spend a lot of time skiing, mountain biking, rock climbing, and exploring the outdoors.
                 When I'm not in Minneapolis, you can find me along the North Shore of Lake Superior, as far away from the city as possible.
                 <br></br>
-                <Link className={style.link}>View my hobbies.</Link>
+                <Link to={'/hobbies'} className={style.link}>View my hobbies.</Link>
               </p>
             </div>
           </div>
