@@ -1,0 +1,10 @@
+.item {
+  padding: $gapLarge 0;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.title {
+  margin-bottom: $gap/2;
+}

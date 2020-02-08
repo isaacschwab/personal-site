@@ -3,33 +3,16 @@ import Img from "gatsby-image"
 
 import style from "./work-tile.module.scss"
 
-class WorkTile extends Component {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-       open: false
-    }
-  }
-
-  onClick = () => {
-    this.setState({open: !this.state.open})
-  }
-  
-  render() {
-    return (
-      <div className={style.item} onClick={this.onClick}>
-        {/* <Img
-          fluid={this.props.image}
-          className={this.state.open ? `${style.open}` : ``}
-        /> */}
-        <img className={style.icon} src={this.props.image} alt="Graphic icon of a camera, representing photography"></img>
-        <h3 className={style.itemName}>{this.props.title}</h3>
-        <div className={style.desc}>{this.props.desc}</div>
-        <a href={this.props.url} target="_blank" rel="noopener noreferrer">View {this.props.title}.</a>
-      </div>
-    )
-  }
+const WorkTile = (props) => {
+  const { title, desc, image, url } = props
+  return (
+    <div className={style.item}>
+      <img className={style.icon} src={image.src.publicURL} alt={image.alt}></img>
+      <h3 className={style.itemName}>{title}</h3>
+      <div className={style.desc}>{desc}</div>
+      <a href={url} target="_blank" rel="noopener noreferrer">View {title}.</a>
+    </div>
+  )
 }
 
 export default WorkTile
