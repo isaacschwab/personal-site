@@ -1,18 +1,42 @@
 [
   {
-    "title" : "Skiing in Big Sky",
-    "description" : "Fresh powder run in the Gullies of Lone Peak, Big Sky, Montana",
+    "title" : "Downhill Skiing",
+    "description" : "Skiing at Big Sky, MT has been a part of my life for the past 20 years. Nothing beats the experience of skiing fresh powder from the summit of Lone Peak. If I can't find fresh powder, you will find me jumping off of features like this one.",
     "image" : {
       "src" : "../images/hobbies/bigsky.jpg",
-      "alt" : "Skiing"
+      "alt" : "Alpine skiier jumping off small natural rock cliff"
     }
   },
   {
-    "title" : "Mountain biking",
-    "description" : "Cascade, Grand Marais, Minnesota",
+    "title" : "Mountain Biking",
+    "description" : "I started mountain biking a few years ago, and it has quickly become one of my favorite activities. Not only does it provide an exhilarating workout, mountain biking allows me to explore nature in a unique way.",
     "image" : {
       "src" : "../images/hobbies/biking.jpg",
-      "alt" : "Biking"
+      "alt" : "Mountain biking on a rock feature with an overlook of a forest below"
+    }
+  },
+  {
+    "title" : "Rock Climbing",
+    "description" : "I spend a great deal of time climbing in the gym. I really enjoy the physical and mental challenge that rock climbing provides. Nothing quite beats the feeling of completing a route or boulder problem that I have been working on for a few climbing sessions. If you haven’t tried climbing before, I highly recommend it.",
+    "image" : {
+      "src" : "../images/hobbies/climbing.jpg",
+      "alt" : "Climbing an artifical boulder problem at an indoor rock climbing facility"
+    }
+  },
+  {
+    "title" : "Slalom Water Skiing",
+    "description" : "Growing up in Minnesota, I have always enjoyed being on a lake during a hot summer day. And even better than being on a lake, is water skiing on a lake.",
+    "image" : {
+      "src" : "../images/hobbies/waterskiing.jpg",
+      "alt" : "Climbing an artifical boulder problem at an indoor rock climbing facility"
+    }
+  },
+  {
+    "title" : "Photography",
+    "description" : "When I’m able to get outdoors, I have been starting to undertake landscape and nature photography. I have always had a love of space and the stars, so I particularly enjoy starscapes, and learning about astrophotography.",
+    "image" : {
+      "src" : "../images/hobbies/starscape.jpg",
+      "alt" : "The milkyway stretched across the night sky"
     }
   }
 ]
