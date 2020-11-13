@@ -4,8 +4,8 @@
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
     "skills": ["NodeJS, React, socket.io"],
     "image" : {
-      "src" : "../images/hobbies/bigsky.jpg",
-      "alt" : "Alpine skiier jumping off small natural rock cliff"
+      "src" : "../images/projects/ledmain.jpg",
+      "alt" : "Astrophotography image with fiber optic strands connected to each star"
     }
   },
   {
@@ -13,8 +13,8 @@
     "skills": ["Python, Gatsby, d3.js"],
     "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
     "image" : {
-      "src" : "../images/hobbies/biking.jpg",
-      "alt" : "Mountain biking on a rock feature with an overlook of a forest below"
+      "src" : "../images/projects/ledmain.jpg",
+      "alt" : "Astrophotography image with fiber optic strands connected to each star"
     }
   },
   {
