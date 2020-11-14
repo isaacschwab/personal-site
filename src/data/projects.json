@@ -3,11 +3,38 @@
     "slug" : "party-pack",
     "title" : "Party Pack",
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
+    "long-desc" : "I started this project as a way to experiment with socket.io, NodeJS, and React. I figured that in addition to expanding my knowledge of these technologies, I could have some fun building a web app that could be used amongst friends. Since I started the project, I find myself coming back to it every couple months to add more functionality. In it's current state, Trivia Blast is functional and playable.",
     "skills": ["NodeJS, React, socket.io"],
     "image" : {
       "src" : "../images/projects/partypack-main.png",
       "alt" : "Astrophotography image with fiber optic strands connected to each star"
-    }
+    },
+    "detail" : [
+      {
+        "title" : "How it works",
+        "text" : "The web app works on desktop or mobile browsers, and requires a host device, in addition to the other player's devices. Hosts should either cast the game to a TV (if playing in person) or stream their screen to other players. Currently, Trivia Blast is the functioning gamemode, so I will use that as an example. In the future I plan to add more gamemodes.",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-howitworks.png",
+          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+        }
+      },
+      {
+        "title" : "Host Creates a Game",
+        "text" : "The host device starts a game, which creates a unique socket.io room on the server that can be joined with the code. After creating the game the host waits for players to join and can adjust game settings.",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-hostcreate.png",
+          "alt" : "Host page of Party Pack - Trivia Blast, displays options such as difficulty, category, etc.."
+        }
+      },
+      {
+        "title" : "Player Joins a Game",
+        "text" : "To join a game, players simply enter the unique code, which will add them to the game, this is reflected on the host screen, in addition to the player screen.",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-joined.png",
+          "alt" : "Host page of Party Pack - Players are now connected."
+        }
+      }
+    ]
   },
   {
     "slug" : "led-stars",
