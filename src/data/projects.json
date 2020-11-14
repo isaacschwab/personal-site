@@ -1,23 +1,26 @@
 [
   {
+    "slug" : "party-pack",
     "title" : "Party Pack",
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
     "skills": ["NodeJS, React, socket.io"],
     "image" : {
-      "src" : "../images/projects/ledmain.jpg",
+      "src" : "../images/projects/partypack-main.png",
       "alt" : "Astrophotography image with fiber optic strands connected to each star"
     }
   },
   {
+    "slug" : "led-stars",
     "title" : "LED Powered Star Photos",
     "skills": ["Python, Gatsby, d3.js"],
     "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
     "image" : {
-      "src" : "../images/projects/ledmain.jpg",
+      "src" : "../images/projects/ledstars-main.jpg",
       "alt" : "Astrophotography image with fiber optic strands connected to each star"
     }
   },
   {
+    "slug" : "nightscapes",
     "title" : "Long-Exposure Starscape Photography",
     "description" : "Looking up to the stars has always been awe inspiring. After seeing many long-exposure astrophotography and nightscapes, I attempt my own in Northern Minnesota.",
     "skills": ["Adobe Lightroom, Adobe Photoshop"],

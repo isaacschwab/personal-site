@@ -26,3 +26,24 @@
 //   }
 
 // }
+
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
+    query Projects {
+      allProjectsJson {
+        nodes {
+          id
+          slug
+        }
+      }
+    }
+  `)
+  data.allProjectsJson.nodes.forEach(node => {
+    const slug = node.slug
+    actions.createPage({
+      path: `/projects/${slug}`,
+      component: require.resolve(`./src/templates/project-detail-template.js`),
+      context: { id: node.id },
+    })
+  })
+}

@@ -6,6 +6,7 @@ import ImgDesc2Col from '../components/img-desc-2-col'
 
 const Projects = ({ data }) => {
   const { projects } = data
+  let count = 0
   return (
     <Layout>
     <SEO title="Projects - Isaac Schwab" />
@@ -13,12 +14,15 @@ const Projects = ({ data }) => {
     <p>Check out some of my projects below! I like to hop back and forth between coding projects, and other hands on projects.</p>
     <section className={`component`}>
         {projects.edges.map(item => {
+          count++
           return (
             <ImgDesc2Col
               key={item.node.id}
               title={item.node.title}
               description={item.node.description}
               image={item.node.image}
+              flip={count % 2 === 0}
+              slug={`/projects/${item.node.slug}`}
             />
           )
         })}
@@ -33,6 +37,7 @@ export const query = graphql`
       edges {
         node {
           id
+          slug
           title
           description
           skills

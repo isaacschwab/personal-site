@@ -3,9 +3,10 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import style from "./img-desc-2-col.module.scss"
+import { Link } from "gatsby"
 
 const ImgDesc2Col = (props) => {
-  const { title, description, image, flip } = props
+  const { title, description, image, flip, slug } = props
   return (
     <div className={style.item}>
       <div className={flip ? `${style.right}` : `${style.left}`}>
@@ -17,6 +18,9 @@ const ImgDesc2Col = (props) => {
       <div className={flip ? `${style.left}` : `${style.right}`}>
         <h2 className={style.title}>{title}</h2>
         <p>{description}</p>
+        {slug &&
+          <Link to={slug}>Learn More</Link>
+        }
       </div>
     </div>
   )
