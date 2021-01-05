@@ -1,0 +1,11 @@
+.item {
+  padding: $gapLarge 0;
+  width: 100%;
+  &:first-child {
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: $medium) {
+    max-width: $medium;
+  }
+}

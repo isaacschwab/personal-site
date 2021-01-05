@@ -7,7 +7,7 @@
     "skills": ["NodeJS, React, socket.io"],
     "image" : {
       "src" : "../images/projects/partypack-main.png",
-      "alt" : "Astrophotography image with fiber optic strands connected to each star"
+      "alt" : "View of Party Pack Trivia Blast"
     },
     "detail" : [
       {
@@ -32,6 +32,14 @@
         "image" : {
           "src" : "../images/projects/partypack/partypack-joined.png",
           "alt" : "Host page of Party Pack - Players are now connected."
+        }
+      },
+      {
+        "title" : "Questions",
+        "text" : "The host game now displays a question for the set amount of time. Each players' device will show the respective questions on their device and can submit an answer before the time runs out.",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-question.png",
+          "alt" : "Host page of Party Pack - Question of Trivia Blast"
         }
       }
     ]

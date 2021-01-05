@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout/"
 import SEO from "../components/seo"
-import ImgDesc2Col from '../components/img-desc-2-col'
+import ImgBasic from '../components/img-basic'
 
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
@@ -12,14 +12,15 @@ const ProjectDetail = ({ data }) => {
     <SEO title={`Projects - ${project.title}`} />
     <h1>{project.title}</h1>
     <p>{project.description}</p>
-    <section className={`component`}>
+    <div>
+      <div>{project.long_desc}</div>
+    </div>
+    <section className={`component center`}>
     {project.detail.map((item, index) => {
       console.log(item)
       return (
-        <ImgDesc2Col
+        <ImgBasic
           key={index}
-          title={item.title}
-          description={item.text}
           image={item.image}
         />
       )
