@@ -1,0 +1,18 @@
+.summaryContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.summaryItem {
+  width: 100%;
+  h2 {
+    font-size: $textMedium;
+  }
+  @media screen and (min-width: $medium) {
+    width: 50%;
+    h2 {
+      font-size: $textLarge
+    }
+  }
+}

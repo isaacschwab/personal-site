@@ -3,8 +3,10 @@
     "slug" : "party-pack",
     "title" : "Party Pack",
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
+    "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
+    "skills" : ["NodeJS", "React", "socket.io"],
     "long-desc" : "I started this project as a way to experiment with socket.io, NodeJS, and React. I figured that in addition to expanding my knowledge of these technologies, I could have some fun building a web app that could be used amongst friends. Since I started the project, I find myself coming back to it every couple months to add more functionality. In it's current state, Trivia Blast is functional and playable.",
-    "skills": ["NodeJS, React, socket.io"],
+    "url" : "https://party-pack.herokuapp.com/",
     "image" : {
       "src" : "../images/projects/partypack-main.png",
       "alt" : "View of Party Pack Trivia Blast"
@@ -47,21 +49,61 @@
   {
     "slug" : "led-stars",
     "title" : "LED Powered Star Photos",
-    "skills": ["Python, Gatsby, d3.js"],
     "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
+    "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
+    "skills": ["Python", "Gatsby", "d3.js"],
+    "long-desc" : "",
     "image" : {
       "src" : "../images/projects/ledstars-main.jpg",
       "alt" : "Astrophotography image with fiber optic strands connected to each star"
-    }
+    },
+    "detail" : [
+      {
+        "title" : "",
+        "text" : "",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-howitworks.png",
+          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-howitworks.png",
+          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+        }
+      }
+    ]
   },
   {
     "slug" : "nightscapes",
     "title" : "Long-Exposure Starscape Photography",
     "description" : "Looking up to the stars has always been awe inspiring. After seeing many long-exposure astrophotography and nightscapes, I attempt my own in Northern Minnesota.",
+    "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
     "skills": ["Adobe Lightroom, Adobe Photoshop"],
+    "long-desc" : "",
     "image" : {
-      "src" : "../images/hobbies/climbing.jpg",
-      "alt" : "Climbing an artifical boulder problem at an indoor rock climbing facility"
-    }
+      "src" : "../images/projects/starscape-main.jpg",
+      "alt" : "Long exposure photo of the stars in the night sky"
+    },
+    "detail" : [
+      {
+        "title" : "",
+        "text" : "",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-howitworks.png",
+          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-howitworks.png",
+          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+        }
+      }
+    ]
   }
 ]

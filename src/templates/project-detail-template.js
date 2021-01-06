@@ -4,6 +4,8 @@ import Layout from "../components/layout/"
 import SEO from "../components/seo"
 import ImgBasic from '../components/img-basic'
 
+import style from './project-detail-template.module.scss'
+
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
   console.log(project)
@@ -12,6 +14,33 @@ const ProjectDetail = ({ data }) => {
     <SEO title={`Projects - ${project.title}`} />
     <h1>{project.title}</h1>
     <p>{project.description}</p>
+    {project.url &&
+      <a href={project.url} target="_blank" rel="noopener noreferrer">View {project.title}.</a>
+    }
+    <div className={style.summaryContainer}>
+      <div className={style.summaryItem}>
+        <h2>Task</h2>
+        <ul>
+          {project.task.map((item, index) => {
+            console.log(item)
+            return (
+              <li>{item}</li>
+            )
+          })}
+        </ul>
+      </div>
+      <div className={style.summaryItem}>
+        <h2>Tech</h2>
+        <ul>
+          {project.skills.map((item, index) => {
+            console.log(item)
+            return (
+              <li>{item}</li>
+            )
+          })}
+        </ul>
+      </div>
+    </div>
     <div>
       <div>{project.long_desc}</div>
     </div>
@@ -37,8 +66,10 @@ export const query = graphql`
       id
       slug
       title
+      url
       description
       long_desc
+      task
       skills
       image {
         alt
