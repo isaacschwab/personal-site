@@ -16,3 +16,15 @@
     }
   }
 }
+
+.detailImage {
+  width: 100%;
+  @media screen and (min-width: $medium) {
+    padding-bottom: $gap;
+  }
+}
+
+.detailCaption {
+  //padding-left: $gap;
+  font-style: italic;
+}

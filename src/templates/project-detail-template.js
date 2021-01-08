@@ -42,16 +42,20 @@ const ProjectDetail = ({ data }) => {
       </div>
     </div>
     <div>
-      <div>{project.long_desc}</div>
+      <div dangerouslySetInnerHTML={{ __html: project.long_desc }}></div>
     </div>
     <section className={`component center`}>
     {project.detail.map((item, index) => {
       console.log(item)
       return (
-        <ImgBasic
-          key={index}
-          image={item.image}
-        />
+        <div className={style.detailImage}>
+          <ImgBasic
+            key={index}
+            image={item.image}
+          />
+          <p className={style.detailCaption}>{item.caption}</p>
+        </div>
+        
       )
     })}
     </section>
@@ -84,6 +88,7 @@ export const query = graphql`
       detail {
         text
         title
+        caption
         image {
           alt
           src {

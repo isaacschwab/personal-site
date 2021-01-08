@@ -5,7 +5,7 @@
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
     "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
     "skills" : ["NodeJS", "React", "socket.io"],
-    "long-desc" : "I started this project as a way to experiment with socket.io, NodeJS, and React. I figured that in addition to expanding my knowledge of these technologies, I could have some fun building a web app that could be used amongst friends. Since I started the project, I find myself coming back to it every couple months to add more functionality. In it's current state, Trivia Blast is functional and playable.",
+    "long-desc" : "I started this project as a way to experiment with socket.io, NodeJS, and React. I figured that in addition to expanding my knowledge of these technologies, I could have some fun building a web app that could be used amongst friends. Since I started the project, I find myself coming back to it every couple months to add more functionality. In its current state, Party Pack consists of a nodeJS server, and a React website, which is how users interact with the site. Socket.io is used to perform all communication between the users of the site. The intention of Party Pack is to connect friends in person or virtually, through party style games, so what are the games?<br><br>The initial game that I built is called Trivia Blast. This game can be played with any number of players, either on mobile or desktop browsers. In this game there needs to be a host device, which acts as the main display for the game. It works best for the host to either cast or connect their display to a TV, or if playing virtually, the host can stream their screen. The players then connect using the room code that was generated for the host. The host can configure settings, and then when everyone is connected, start the game. Gameplay is currently round based trivia. Each round consists of a question, and multiple potential answers. When the round starts, users get the answers displayed on their devices, and need to select an answer before time runs out. A fun mechanic to work with in this gamemode was time. Each question has a set amount of time, and based on when a user answers the question they receive a higher score. Once the time has completed, player devices can no longer answer, and the correct answer is displayed on the host screen. The scoreboard is shown in-between each round and at the end of the game to show the final standings.<br><br>I have a list of improvements and ideas that I plan to add to Trivia Blast and Party Pack as a whole. Some of the main ones include: improved visuals/design, connect/reconnect functionality, new scoring modes, animations, improved performance, and a persistent database. And of course, I’d like to add new game modes. I have started an implementation of the Spotify SDK to help build a base for a music based gamemode.<br><br>Overall, I see this as a fun side project that I can slowly build upon, and use as a medium to explore web technologies. It also has the added benefit of being used when spending time with friends and family.",
     "url" : "https://party-pack.herokuapp.com/",
     "image" : {
       "src" : "../images/projects/partypack-main.png",
@@ -15,6 +15,7 @@
       {
         "title" : "How it works",
         "text" : "The web app works on desktop or mobile browsers, and requires a host device, in addition to the other player's devices. Hosts should either cast the game to a TV (if playing in person) or stream their screen to other players. Currently, Trivia Blast is the functioning gamemode, so I will use that as an example. In the future I plan to add more gamemodes.",
+        "caption" : "Homepage of Party Pack, players can join games using a code, and hosts can start a new game lobby.",
         "image" : {
           "src" : "../images/projects/partypack/partypack-howitworks.png",
           "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
@@ -23,6 +24,7 @@
       {
         "title" : "Host Creates a Game",
         "text" : "The host device starts a game, which creates a unique socket.io room on the server that can be joined with the code. After creating the game the host waits for players to join and can adjust game settings.",
+        "caption" : "Host view of Trivia Blast game, waiting for players to join using the code.",
         "image" : {
           "src" : "../images/projects/partypack/partypack-hostcreate.png",
           "alt" : "Host page of Party Pack - Trivia Blast, displays options such as difficulty, category, etc.."
@@ -31,6 +33,7 @@
       {
         "title" : "Player Joins a Game",
         "text" : "To join a game, players simply enter the unique code, which will add them to the game, this is reflected on the host screen, in addition to the player screen.",
+        "caption" : "Host view of Trivia Blast game, now with players joined.",
         "image" : {
           "src" : "../images/projects/partypack/partypack-joined.png",
           "alt" : "Host page of Party Pack - Players are now connected."
@@ -39,20 +42,39 @@
       {
         "title" : "Questions",
         "text" : "The host game now displays a question for the set amount of time. Each players' device will show the respective questions on their device and can submit an answer before the time runs out.",
+        "caption" : "The host display of a Trivia Blast round in progress. Players see the same questions and answers on their device and must select an answer before time runs out.",
         "image" : {
           "src" : "../images/projects/partypack/partypack-question.png",
           "alt" : "Host page of Party Pack - Question of Trivia Blast"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "The host display of the correct answer at the end of a round.",
+        "image" : {
+          "src" : "../images/projects/partypack-main.png",
+          "alt" : "Host page of Party Pack - Question of Trivia Blast with the answer highlighted"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "A collection a views from a player device on a mobile browser.",
+        "image" : {
+          "src" : "../images/projects/partypack/partypack-mobile.png",
+          "alt" : "A collection a views from a player device on a mobile browser"
         }
       }
     ]
   },
   {
     "slug" : "led-stars",
-    "title" : "LED Powered Star Photos",
-    "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
-    "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
-    "skills": ["Python", "Gatsby", "d3.js"],
-    "long-desc" : "",
+    "title" : "Fiber Optic Strand Star Photos",
+    "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of starscape experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
+    "task" : ["Combine a physical project with coding", "Explore astrology libraries and code", "Use Python to apply image processing"],
+    "skills": ["d3.js", "GatsbyJS", "Python - OpenCV"],
+    "long-desc" : "I was inspired to start this project from posts I had seen about star ceilings that people were building in their houses. As building a new ceiling wasn’t an option, I thought a scaled down version would be a fun project. I decided to use an astrophotography photo for the template in the initial proof of concept. The image was printed and then glued to some cardboard. The next steps were pretty slow and monotonous. I poked holes, fed the fiber optic strands through, and glued them in place, one by one. Eventually, I ended up with the proof of concept you see below in the first picture.<br><br>I was happy with the test, but wanted to now include a coding element to this project. I wanted to improve how to determine which stars to feed fiber strands through. For this I used the OpenCV library in Python to detect the star's brightness. The idea was to pick out the brightest stars and set a limit based on the number of fiber strands I could use. This resulted in an image with just the stars, all other detail was removed. Even with the stars that I wanted highlighted, I lacked any control of the stars in the sky, and was limited to a limited selection of astrophotography photos.<br><br>To remedy this issue, I wanted to attempt generating the night sky. I found some d3.js libraries that people had created solely for this purpose. I forked an astronomy library called celestial-d3, and started making modifications. The initial changes I worked towards were dropping the library into React and Gatsby, followed by outputting the image as an svg. The generated star approach had the added benefit of complete control of the stars (number, size, color, etc.) and better control over exporting the image for use as a template.<br><br>Next steps include improving on each part of the project as a whole. I need to alter the process of creating the physical fiber optic night sky. I plan to use different materials, and would like to semi-automate part of the task. I’m going to move forward with the d3-celestial part of the project, over OpenCV. I enjoyed learning an astronomy library to generate the stars, and believe the potential it provides is superior to actual photos. I will keep making changes to my fork of the library, so that my next revision to the physical product is of much higher quality.",
     "image" : {
       "src" : "../images/projects/ledstars-main.jpg",
       "alt" : "Astrophotography image with fiber optic strands connected to each star"
@@ -61,17 +83,73 @@
       {
         "title" : "",
         "text" : "",
+        "caption" : "The completed proof of concept.",
         "image" : {
-          "src" : "../images/projects/partypack/partypack-howitworks.png",
-          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+          "src" : "../images/projects/ledstars-main.jpg",
+          "alt" : "Astrophotography image with fiber optic strands connected to each star"
         }
       },
       {
         "title" : "",
         "text" : "",
+        "caption" : "The LED light engine that powers the project.",
         "image" : {
-          "src" : "../images/projects/partypack/partypack-howitworks.png",
-          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+          "src" : "../images/projects/ledstars/ledstars-lights.jpg",
+          "alt" : "LED light engine and fiber optic strand bundle"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Poking a lot of holes through the stars.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-holes.jpg",
+          "alt" : "A pointed end tool being used to poke holes to feed the fiber optic strands through"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "All of the holes for the strands marked and sectioned.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-planning.jpg",
+          "alt" : "Holes for the strands are circled to make it easier to find"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "The strands are pushed through and then glued down on the backside. After I complete a section I cutoff the excess material.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-strands.jpg",
+          "alt" : "View of the fiber optic strands poking through the star holes"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Testing out the progress with the light engine turned on.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-progress.jpg",
+          "alt" : "Fiber optic strands are lit up for part of the stars that have been completed"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "A generated star sky using a modified celestial-d3 astro library.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-canvas.png",
+          "alt" : "A generated star sky using a modified celestial-d3 astro library"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "The above section of night sky rendered as an svg. This was output using my forked version of celestial-d3, running on a local GatsbyJS site.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-svgoutput.png",
+          "alt" : "A generated star sky using celestial-d3 astro library"
         }
       }
     ]
