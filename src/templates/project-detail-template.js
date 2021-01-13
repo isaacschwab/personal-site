@@ -13,10 +13,13 @@ const ProjectDetail = ({ data }) => {
     <Layout>
     <SEO title={`Projects - ${project.title}`} />
     <h1>{project.title}</h1>
-    <p>{project.description}</p>
-    {project.url &&
+    <p>
+      {project.description}<br></br>
+      {project.url &&
       <a href={project.url} target="_blank" rel="noopener noreferrer">View {project.title}.</a>
-    }
+      }
+    </p>
+    
     <div className={style.summaryContainer}>
       <div className={style.summaryItem}>
         <h2>Task</h2>
