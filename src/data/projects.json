@@ -1,5 +1,6 @@
 [
   {
+    "type" : "project",
     "slug" : "party-pack",
     "title" : "Party Pack",
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
@@ -69,6 +70,7 @@
     ]
   },
   {
+    "type" : "project",
     "slug" : "led-stars",
     "title" : "Fiber Optic Strand Star Photos",
     "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of starscape experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
@@ -155,6 +157,7 @@
     ]
   },
   {
+    "type" : "project",
     "slug" : "nightscapes",
     "title" : "Long-Exposure Starscape Photography",
     "description" : "Looking up to the stars has always been awe inspiring. After seeing many long-exposure astrophotography and nightscapes, I attempt my own in Northern Minnesota.",
@@ -180,6 +183,132 @@
         "image" : {
           "src" : "../images/projects/partypack/partypack-howitworks.png",
           "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+        }
+      }
+    ]
+  },
+  {
+    "type" : "work",
+    "slug" : "progresso-soup",
+    "title" : "Progresso Soups",
+    "description" : "The consumer facing website for the Progresso Soups brand.",
+    "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
+    "skills": ["GatsbyJS", "Wordpress", "React"],
+    "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "image" : {
+      "src" : "../images/work/soup.svg",
+      "alt" : "Icon of steaming cup of soup"
+    },
+    "url" : "https://www.progresso.com/",
+    "detail" : [
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/home.png",
+          "alt" : "Homepage of Progresso Soups website"
+        }
+      },
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/navbar.png",
+          "alt" : "Progresso soups navigation menu expanded"
+        }
+      },
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/products.png",
+          "alt" : "Progresso products listing page, showcases advanced filtering"
+        }
+      },
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/recipes.png",
+          "alt" : "Progresso recipes listing page, showcases advanced filtering"
+        }
+      },
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/productdetail.png",
+          "alt" : "Progresso product detail page"
+        }
+      },
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/recipedetail.png",
+          "alt" : "Progresso recipe detail page"
+        }
+      }
+    ]
+  },
+  {
+    "type" : "work",
+    "slug" : "chex-mix",
+    "title" : "Chex Mix",
+    "description" : "A Wordpress solution that has product unique patterns throughout the site.",
+    "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
+    "skills": ["GatsbyJS", "Wordpress", "React"],
+    "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "image" : {
+      "src" : "../images/work/protein-bar.svg",
+      "alt" : "Icon of a protein bar"
+    },
+    "url" : "https://www.chexmix.com/",
+    "detail" : [
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/home.png",
+          "alt" : "Homepage of Progresso Soups website"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "The LED light engine that powers the project.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-lights.jpg",
+          "alt" : "LED light engine and fiber optic strand bundle"
+        }
+      }
+    ]
+  },
+  {
+    "type" : "work",
+    "slug" : "larabar-ca",
+    "title" : "Larabar Canada",
+    "description" : "A multilingual Wordpress solution with bright colors, fun imagery, and a two tier navigation menu.",
+    "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
+    "skills": ["GatsbyJS", "Wordpress", "React"],
+    "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "image" : {
+      "src" : "../images/work/protein-bar.svg",
+      "alt" : "Icon of a protein bar"
+    },
+    "url" : "https://www.larabar.ca/",
+    "detail" : [
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/progresso/home.png",
+          "alt" : "Homepage of Progresso Soups website"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "The LED light engine that powers the project.",
+        "image" : {
+          "src" : "../images/projects/ledstars/ledstars-lights.jpg",
+          "alt" : "LED light engine and fiber optic strand bundle"
         }
       }
     ]

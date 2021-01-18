@@ -33,7 +33,7 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
   query {
-    projects: allProjectsJson {
+    projects: allProjectsJson(filter: {type: {eq: "project"}}) {
       edges {
         node {
           id

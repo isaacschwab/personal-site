@@ -7,9 +7,10 @@ import style from "./work.module.scss"
 const Work = () => {
   const data = useStaticQuery(graphql`
     query {
-      work: allWorkJson {
+      work: allProjectsJson(filter: {type: {eq: "work"}}) {
         edges {
           node {
+            slug
             id
             title
             description
@@ -38,7 +39,7 @@ const Work = () => {
               title={item.node.title}
               desc={item.node.description}
               image={item.node.image}
-              url={item.node.url}
+              url={item.node.slug}
             />
           )
         })}

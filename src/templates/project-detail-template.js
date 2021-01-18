@@ -27,7 +27,7 @@ const ProjectDetail = ({ data }) => {
           {project.task.map((item, index) => {
             console.log(item)
             return (
-              <li>{item}</li>
+              <li key={`task-${index}`}>{item}</li>
             )
           })}
         </ul>
@@ -38,20 +38,20 @@ const ProjectDetail = ({ data }) => {
           {project.skills.map((item, index) => {
             console.log(item)
             return (
-              <li>{item}</li>
+              <li key={`tech-${index}`}>{item}</li>
             )
           })}
         </ul>
       </div>
     </div>
     <div>
-      <div dangerouslySetInnerHTML={{ __html: project.long_desc }}></div>
+      <p dangerouslySetInnerHTML={{ __html: project.long_desc }}></p>
     </div>
     <section className={`component center`}>
     {project.detail.map((item, index) => {
       console.log(item)
       return (
-        <div className={style.detailImage}>
+        <div key={index} className={style.detailImage}>
           <ImgBasic
             key={index}
             image={item.image}

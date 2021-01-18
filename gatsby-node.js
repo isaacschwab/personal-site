@@ -34,16 +34,26 @@ exports.createPages = async function ({ actions, graphql }) {
         nodes {
           id
           slug
+          type
         }
       }
     }
   `)
   data.allProjectsJson.nodes.forEach(node => {
     const slug = node.slug
-    actions.createPage({
-      path: `/projects/${slug}`,
-      component: require.resolve(`./src/templates/project-detail-template.js`),
-      context: { id: node.id },
-    })
+    if(node.type == "work") {
+      actions.createPage({
+        path: `/work/${slug}`,
+        component: require.resolve(`./src/templates/project-detail-template.js`),
+        context: { id: node.id },
+      })
+    } 
+    else {
+      actions.createPage({
+        path: `/projects/${slug}`,
+        component: require.resolve(`./src/templates/project-detail-template.js`),
+        context: { id: node.id },
+      })
+    }
   })
 }
