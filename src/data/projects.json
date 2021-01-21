@@ -194,7 +194,7 @@
     "description" : "The consumer facing website for the Progresso Soups brand.",
     "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
     "skills": ["GatsbyJS", "Wordpress", "React"],
-    "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "long-desc" : "This website was one of my favorite projects at General Mills. The goal was to create a site that could handle a lot of product and recipe data, while being very fast. Our team had done some prior work with Gatsby, so I knew it was the obvious choice. Not only did Gatsby provide the incredible performance that was required, it also had the built in flexibility to handle multiple data sources. The project also allowed me to build a modular Gatsby template for our team to use as a starting point for additional Gatsby websites.<br><br>When building this template, I had to keep to a few criteria. First, some data needed to be sourced from Wordpress so that our content team could continue authoring like they do with our full-fledged Wordpress websites. To enable this functionality, I used the gatsby-source-wordpress library to pull data from a headless Wordpress instance. Next, I needed to convert our team’s design and layout modules from PHP to React. This was actually quite enjoyable, as I prefer React to PHP, not to mention React allowed some quality refactoring, especially in the product and recipe filtering pages. The last big ticket item for the Gatsby template was sourcing internal API data. I was able to pull recipe/product data into Gatsby, and generate pages from the data. This approach provided huge time savings over the traditional approach of manually authoring data for recipes in Wordpress.<br><br>This was the first multi-tier navigation menu for our team, so I had the challenge of building the first version. I would again need to source the menu data from the Wordpress CMS, and then create the actual menu in React. Creating an accessible menu is quite a process, but in the end I was very happy with the result. I definitely enjoyed creating it in React more than I did when I built it again in PHP a month later!<br><br>I really enjoyed the work our design team did for this site. Not only does the end product look great, but the custom css was a fun part of the site build.",
     "image" : {
       "src" : "../images/work/soup.svg",
       "alt" : "Icon of steaming cup of soup"
@@ -247,11 +247,36 @@
   },
   {
     "type" : "work",
+    "slug" : "boxtops4education",
+    "title" : "Box Tops for Education",
+    "description" : "Building and maintaining the services and data that power the mobile Box Tops for Education app.",
+    "task" : ["Enable new app features via the API", "Improve API performance", "Build tooling to support the app services"],
+    "skills": [".NET", "SQL", "Postman"],
+    "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "image" : {
+      "src" : "../images/work/protein-bar.svg",
+      "alt" : "Icon of a protein bar"
+    },
+    "url" : "https://www.larabar.ca/",
+    "detail" : [
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/larabar/home.png",
+          "alt" : "Homepage of Larabar Canada website"
+        }
+      }
+    ]
+  },
+  {
+    "type" : "work",
     "slug" : "chex-mix",
     "title" : "Chex Mix",
     "description" : "A Wordpress solution that has product unique patterns throughout the site.",
     "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
-    "skills": ["GatsbyJS", "Wordpress", "React"],
+    "skills": ["Wordpress", "CSS", "PHP"],
     "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
     "image" : {
       "src" : "../images/work/protein-bar.svg",
@@ -264,17 +289,26 @@
         "text" : "",
         "caption" : "",
         "image" : {
-          "src" : "../images/work/progresso/home.png",
-          "alt" : "Homepage of Progresso Soups website"
+          "src" : "../images/work/chex/home.png",
+          "alt" : "Homepage of Chex Mix website"
         }
       },
       {
         "title" : "",
         "text" : "",
-        "caption" : "The LED light engine that powers the project.",
+        "caption" : "",
         "image" : {
-          "src" : "../images/projects/ledstars/ledstars-lights.jpg",
-          "alt" : "LED light engine and fiber optic strand bundle"
+          "src" : "../images/work/chex/productdetail.png",
+          "alt" : "Product detail page of Chex Mix website"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/chex/products.png",
+          "alt" : "Product listing page of Chex Mix website"
         }
       }
     ]
@@ -298,17 +332,26 @@
         "text" : "",
         "caption" : "",
         "image" : {
-          "src" : "../images/work/progresso/home.png",
-          "alt" : "Homepage of Progresso Soups website"
+          "src" : "../images/work/larabar/home.png",
+          "alt" : "Homepage of Larabar Canada website"
         }
       },
       {
         "title" : "",
         "text" : "",
-        "caption" : "The LED light engine that powers the project.",
+        "caption" : "",
         "image" : {
-          "src" : "../images/projects/ledstars/ledstars-lights.jpg",
-          "alt" : "LED light engine and fiber optic strand bundle"
+          "src" : "../images/work/larabar/products.png",
+          "alt" : "Listing of products on the Larabar website"
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/larabar/productdetail.png",
+          "alt" : "Detail view of a product detaul page on the Larabar website"
         }
       }
     ]
