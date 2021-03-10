@@ -23,6 +23,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
@@ -42,12 +43,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
+        additionalData: `@use "${__dirname}/src/global-styles/vars.scss" as *;`,
         sassOptions: {
-          data: '@import "./src/vars.scss";',
           includePaths: [
             'src/components/',
             'src/templates/'
-          ],
+          ]
         }
       },
     },

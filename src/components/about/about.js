@@ -1,9 +1,7 @@
-import { useStaticQuery, graphql, Link } from "gatsby"
-import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import React from "react"
-import Img from "gatsby-image"
 
-import style from "./about.module.scss"
+import * as style from "./about.module.scss"
 
 import webImage from "../../images/web.svg"
 import designImage from "../../images/design.svg"
@@ -13,24 +11,6 @@ import skiImage from "../../images/skiing.svg"
 import climbImage from "../../images/climbing.svg"
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      logo: file(relativePath: { eq: "headshot.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      hobby: file(relativePath: { eq: "html.png" }) {
-        childImageSharp {
-          fixed(height: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
   return (
     <section className={`component`}>
       <div className={style.container}>
@@ -51,7 +31,7 @@ const About = () => {
               <img className={style.icon} src={cameraImage} alt="Graphic icon of a camera, representing photography"></img>
             </div>
             <div className={style.visualTextText}>
-              <p className={style.text}>
+              <p>
                 Outside of work I have a variety of side projects that I like to tinker with when I have time.
                 This includes web and game development, design, and photography.
                 <br></br>
@@ -67,7 +47,7 @@ const About = () => {
               <img className={style.icon} src={climbImage} alt="Graphic icon of a person rock climbing"></img>
             </div>
             <div className={style.visualTextText}>
-              <p className={style.text}>
+              <p>
                 I also like to get away from a screen and get some activity. I spend a lot of time skiing, mountain biking, rock climbing, and exploring the outdoors.
                 When I'm not in Minneapolis, you can find me along the North Shore of Lake Superior, as far away from the city as possible.
                 <br></br>

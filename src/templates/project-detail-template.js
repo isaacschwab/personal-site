@@ -1,10 +1,17 @@
-import React from "react"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout/"
-import SEO from "../components/seo"
+import Layout from '../components/layout/'
+import SEO from '../components/seo'
 import ImgBasic from '../components/img-basic'
 
-import style from './project-detail-template.module.scss'
+import 
+{ 
+  summaryContainer, 
+  summaryItem,  
+  detailImage, 
+  detailCaption 
+} from './project-detail-template.module.scss'
 
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
@@ -20,8 +27,8 @@ const ProjectDetail = ({ data }) => {
       }
     </p>
     
-    <div className={style.summaryContainer}>
-      <div className={style.summaryItem}>
+    <div className={summaryContainer}>
+      <div className={summaryItem}>
         <h2>Task</h2>
         <ul>
           {project.task.map((item, index) => {
@@ -32,7 +39,7 @@ const ProjectDetail = ({ data }) => {
           })}
         </ul>
       </div>
-      <div className={style.summaryItem}>
+      <div className={summaryItem}>
         <h2>Tech</h2>
         <ul>
           {project.skills.map((item, index) => {
@@ -51,12 +58,12 @@ const ProjectDetail = ({ data }) => {
     {project.detail.map((item, index) => {
       console.log(item)
       return (
-        <div key={index} className={style.detailImage}>
+        <div key={index} className={detailImage}>
           <ImgBasic
             key={index}
             image={item.image}
           />
-          <p className={style.detailCaption}>{item.caption}</p>
+          <p className={detailCaption}>{item.caption}</p>
         </div>
         
       )
@@ -82,9 +89,7 @@ export const query = graphql`
         alt
         src {
           childImageSharp {
-            fluid(maxWidth: 1000, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(width: 1000, quality: 90)
           }
         }
       }
@@ -96,9 +101,7 @@ export const query = graphql`
           alt
           src {
             childImageSharp {
-              fluid(maxWidth: 1000, quality: 90) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(width: 1000, quality: 90)
             }
           }
         }

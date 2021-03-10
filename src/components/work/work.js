@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import WorkTile from "./work-tile"
 
-import style from "./work.module.scss"
+import * as style from "./work.module.scss"
 
 const Work = () => {
   const data = useStaticQuery(graphql`

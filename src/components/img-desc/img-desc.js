@@ -1,19 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-import style from "./img-desc.module.scss"
+import { item, itemTitle } from "./img-desc.module.scss"
 
 const ImgDesc = (props) => {
   const { title, description, image } = props
   return (
-    <div className={style.item}>
-      <h2 className={style.title}>{title}</h2>
+    <div className={item}>
+      <h2 className={itemTitle}>{title}</h2>
       <p>{description}</p>
-      <Img
-        fluid={image.src.childImageSharp.fluid}
-        alt={image.alt}
-      />
+      <GatsbyImage image={image.src.childImageSharp.gatsbyImageData} alt={image.alt} />
     </div>
   )
 }
