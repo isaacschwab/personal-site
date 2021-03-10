@@ -42,11 +42,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        data: '@import "./src/vars.scss";',
-        includePaths: [
-          'src/components/',
-          'src/templates/'
-        ],
+        sassOptions: {
+          data: '@import "./src/vars.scss";',
+          includePaths: [
+            'src/components/',
+            'src/templates/'
+          ],
+        }
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
