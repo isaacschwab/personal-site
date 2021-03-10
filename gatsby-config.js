@@ -23,6 +23,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
@@ -42,11 +43,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        data: '@import "./src/vars.scss";',
-        includePaths: [
-          'src/components/',
-          'src/templates/'
-        ],
+        additionalData: `@use "${__dirname}/src/global-styles/vars.scss" as *;`,
+        sassOptions: {
+          includePaths: [
+            'src/components/',
+            'src/templates/'
+          ]
+        }
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
