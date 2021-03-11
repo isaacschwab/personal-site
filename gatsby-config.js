@@ -26,6 +26,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-json`,
     `gatsby-transformer-inline-svg`,
     {

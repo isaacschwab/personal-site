@@ -2,25 +2,13 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import * as style from "./header.module.scss"
+import { header, container, logo, menu, menuLink } from "./header.module.scss"
 
 const Header = ({ siteTitle }) => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     logo: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 300) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
-    <header className={style.header}>
-      <div className={style.container}>
-        <h1 style={{ margin: 0 }}>
+    <header className={header}>
+      <div className={container}>
+        <div className={logo} style={{ margin: 0 }}>
           <Link
             to="/"
             style={{
@@ -33,7 +21,12 @@ const Header = ({ siteTitle }) => {
             </svg>
 
           </Link>
-        </h1>
+        </div>
+        <ul className={menu}>
+          <li><Link to={"/work"} className={menuLink}>Work</Link></li>
+          <li><Link to={"/projects"} className={menuLink}>Projects</Link></li>
+          <li><Link to={"/hobbies"} className={menuLink}>Hobbies</Link></li>
+        </ul>
       </div>
     </header>
   )

@@ -1,3 +1,11 @@
+.workSection {
+  padding-bottom: $gap;
+
+  @media screen and (min-width: $medium) {
+    padding-bottom: $gap*2;
+  }
+}
+
 .title {
   text-align: center;
 }
@@ -6,8 +14,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  padding-bottom: $gap*1.5;
 
   @media screen and (min-width: $medium) {
     flex-flow: row nowrap;
+    padding-bottom: $gap*3;
   }
 }

@@ -5,5 +5,51 @@
 
 .container {
   display: flex;
-  padding: $gapLarge 0;
+  padding-top: $gapLarge;
+  flex-flow: column;
+
+  @media screen and (min-width: $medium) {
+    flex-flow: row nowrap;
+    padding: $gapLarge 0;
+    padding-left: $gap;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $gap;
+
+  @media screen and (min-width: $medium) {
+    flex-flow: row nowrap;
+    padding-left: $gap;
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0;
+
+  li {
+    list-style: none;
+    padding: 0 $gap/2;
+
+    @media screen and (min-width: $medium) {
+      padding-left: $gap;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    flex-flow: row nowrap;
+    padding-left: $gap;
+    justify-content: space-between;
+  }
+}
+
+.menuLink {
+  color: $white;
 }

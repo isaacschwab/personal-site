@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import Work from "../work"
 
 import * as style from "./about.module.scss"
 
@@ -18,11 +19,14 @@ const About = () => {
           <div className={style.bio}>
             <h2>About Me</h2>
             <p>
-            Hi, I’m Isaac Schwab, a computer scientist that lives and works in Minneapolis, MN.
-            I attended the University of Minnesota where I graduated with a degree in Computer Science.
-            I currently work at General Mills, where I can be found building performant, accesible, and visually appealing websites.
+            Hi, I’m Isaac Schwab, a software engineer with {new Date().getFullYear() - 2017}+ years of full-stack development experience, 
+            determined to make an impact in a rapidly changing industry. I specialize in web technologies, object oriented programming, databases, and scripting,
+            but I'm always open to learning something new! I enjoy opportunities to build out new capabilities, while focusing on functionality, performance and user experience.
+            I currently work at General Mills, where I can be found building performant, accesible, and visually appealing websites, check out some of my work below.
             </p>
           </div>
+
+          <Work />
 
           <div className={`${style.visualTextWrap} ${style.visualTextWrap}`}>
             <div className={style.visualTextVisual}>

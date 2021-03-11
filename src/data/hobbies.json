@@ -3,15 +3,15 @@
     "title" : "Downhill Skiing",
     "description" : "Skiing at Big Sky, MT has been a part of my life for the past 20 years. Nothing beats the experience of skiing fresh powder from the summit of Lone Peak. If I can't find fresh powder, you will find me jumping off of features like this one.",
     "image" : {
-      "src" : "../images/hobbies/bigsky.jpg",
-      "alt" : "Alpine skiier jumping off small natural rock cliff"
+      "src" : "../images/hobbies/skiing.jpg",
+      "alt" : "Alpine skiier in fresh powder"
     }
   },
   {
     "title" : "Mountain Biking",
     "description" : "I started mountain biking a few years ago, and it has quickly become one of my favorite activities. Not only does it provide an exhilarating workout, mountain biking allows me to explore nature in a unique way.",
     "image" : {
-      "src" : "../images/hobbies/biking.jpg",
+      "src" : "../images/hobbies/mtbbiking.jpg",
       "alt" : "Mountain biking on a rock feature with an overlook of a forest below"
     }
   },
