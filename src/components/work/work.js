@@ -15,7 +15,7 @@ const Work = () => {
             title
             description
             url
-            image {
+            icon {
               alt
               src {
                 extension
@@ -38,7 +38,7 @@ const Work = () => {
             key={item.node.id}
             title={item.node.title}
             desc={item.node.description}
-            image={item.node.image}
+            icon={item.node.icon}
             url={item.node.slug}
           />
         )

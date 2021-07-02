@@ -195,9 +195,13 @@
     "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
     "skills": ["GatsbyJS", "Wordpress", "React"],
     "long-desc" : "This website was one of my favorite projects at General Mills. The goal was to create a site that could handle a lot of product and recipe data, while being very fast. Our team had done some prior work with Gatsby, so I knew it was the obvious choice. Not only did Gatsby provide the incredible performance that was required, it also had the built in flexibility to handle multiple data sources. The project also allowed me to build a modular Gatsby template for our team to use as a starting point for additional Gatsby websites.<br><br>When building this template, I had to keep to a few criteria. First, some data needed to be sourced from Wordpress so that our content team could continue authoring like they do with our full-fledged Wordpress websites. To enable this functionality, I used the gatsby-source-wordpress library to pull data from a headless Wordpress instance. Next, I needed to convert our team’s design and layout modules from PHP to React. This was actually quite enjoyable, as I prefer React to PHP, not to mention React allowed some quality refactoring, especially in the product and recipe filtering pages. The last big ticket item for the Gatsby template was sourcing internal API data. I was able to pull recipe/product data into Gatsby, and generate pages from the data. This approach provided huge time savings over the traditional approach of manually authoring data for recipes in Wordpress.<br><br>This was the first multi-tier navigation menu for our team, so I had the challenge of building the first version. I would again need to source the menu data from the Wordpress CMS, and then create the actual menu in React. Creating an accessible menu is quite a process, but in the end I was very happy with the result. I definitely enjoyed creating it in React more than I did when I built it again in PHP a month later!<br><br>I really enjoyed the work our design team did for this site. Not only does the end product look great, but the custom css was a fun part of the site build.",
-    "image" : {
-      "src" : "../images/work/soup.svg",
+    "icon" : {
+      "src" : "../images/work/progresso/soup.svg",
       "alt" : "Icon of steaming cup of soup"
+    },
+    "image" : {
+      "src" : "../images/work/progresso/progresso-main.png",
+      "alt" : "Hero image of Progresso.com"
     },
     "url" : "https://www.progresso.com/",
     "detail" : [
@@ -253,11 +257,15 @@
     "task" : ["Enable new app features via the API", "Improve API performance", "Build tooling to support the app services"],
     "skills": [".NET", "SQL", "Postman"],
     "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
-    "image" : {
-      "src" : "../images/work/protein-bar.svg",
-      "alt" : "Icon of a protein bar"
+    "icon" : {
+      "src" : "../images/work/boxtops/boxtop.svg",
+      "alt" : "Icon of a Box Top ticket"
     },
-    "url" : "https://www.larabar.ca/",
+    "image" : {
+      "src" : "../images/work/boxtops/boxtops-main.png",
+      "alt" : "Hero of boxtops4education.com"
+    },
+    "url" : "https://www.boxtops4education.com/",
     "detail" : [
       {
         "title" : "",
@@ -274,13 +282,17 @@
     "type" : "work",
     "slug" : "chex-mix",
     "title" : "Chex Mix",
-    "description" : "A Wordpress solution that has product unique patterns throughout the site.",
-    "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
+    "description" : "A Wordpress website with product specific patterns and a simplified authoring experience.",
+    "task" : ["Build a performant, appealing, and accessible website", "Enable product unique patterns", "Create a simplified authoring experience"],
     "skills": ["Wordpress", "CSS", "PHP"],
     "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "icon" : {
+      "src" : "../images/work/chex/chex.svg",
+      "alt" : "Icon of a Chex piece"
+    },
     "image" : {
-      "src" : "../images/work/protein-bar.svg",
-      "alt" : "Icon of a protein bar"
+      "src" : "../images/work/chex/chex-main.png",
+      "alt" : "Hero of Chex.com"
     },
     "url" : "https://www.chexmix.com/",
     "detail" : [
@@ -321,8 +333,12 @@
     "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
     "skills": ["GatsbyJS", "Wordpress", "React"],
     "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "icon" : {
+      "src" : "../images/work/larabar/protein-bar.svg",
+      "alt" : "Icon of a protein bar"
+    },
     "image" : {
-      "src" : "../images/work/protein-bar.svg",
+      "src" : "../images/work/larabar/larabar-main.png",
       "alt" : "Icon of a protein bar"
     },
     "url" : "https://www.larabar.ca/",
