@@ -10,7 +10,7 @@ const Work = ({ data }) => {
   let count = 0
   return (
     <Layout>
-    <SEO title="Work- Isaac Schwab" />
+    <SEO title="Work - Isaac Schwab" />
     <h1>Work</h1>
     <p>Check out some of some of the projects I have done for work!</p>
     <section className={`component`}>
@@ -23,7 +23,7 @@ const Work = ({ data }) => {
               description={item.node.description}
               image={item.node.image}
               flip={count % 2 === 0}
-              slug={`/projects/${item.node.slug}`}
+              slug={`/work/${item.node.slug}`}
             />
           )
         })}
