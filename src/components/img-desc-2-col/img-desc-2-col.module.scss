@@ -1,6 +1,6 @@
 .item {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: space-around;
 
   @media screen and (min-width: $medium) {
@@ -14,22 +14,26 @@
 }
 
 .left {
+  display: flex;
+  flex-flow: column nowrap;
   width: 100%;
   padding: $gap;
+  justify-content: center;
 
   @media screen and (min-width: $medium) {
-    flex-flow: row nowrap;
     width: 50%;
     order: 0;
   }
 }
 
 .right {
+  display: flex;
+  flex-flow: column nowrap;
   width: 100%;
   padding: $gap;
+  justify-content: center;
 
   @media screen and (min-width: $medium) {
-    flex-flow: row nowrap;
     width: 50%;
     order: 1;
   }

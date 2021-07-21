@@ -12,7 +12,7 @@ const Projects = ({ data }) => {
     <Layout>
     <SEO title="Projects - Isaac Schwab" />
     <h1>Projects</h1>
-    <p>Check out some of my projects below! I like to hop back and forth between coding projects, and other hands on projects.</p>
+    <p>Check out some of my personal projects below!</p>
     <section className={`component`}>
         {projects.edges.map(item => {
           count++

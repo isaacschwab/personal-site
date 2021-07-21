@@ -1,5 +1,7 @@
 .header {
-  margin: 0 $gapLarge;
+  margin: 0 auto;
+  max-width: $layoutWidth;
+  padding: 0 $gapLarge $gapLarge;
   background: $primaryDark;
 }
 
@@ -11,7 +13,6 @@
   @media screen and (min-width: $medium) {
     flex-flow: row nowrap;
     padding: $gapLarge 0;
-    padding-left: $gap;
     justify-content: space-between;
   }
 }
@@ -23,7 +24,6 @@
 
   @media screen and (min-width: $medium) {
     flex-flow: row nowrap;
-    padding-left: $gap;
     justify-content: space-between;
   }
 }

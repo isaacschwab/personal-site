@@ -19,10 +19,9 @@ const About = () => {
           <div className={style.bio}>
             <h2>About Me</h2>
             <p>
-            Hi, I’m Isaac Schwab, a software engineer with {new Date().getFullYear() - 2017}+ years of full-stack development experience, 
-            determined to make an impact in a rapidly changing industry. I specialize in web technologies, object oriented programming, databases, and scripting,
-            but I'm always open to learning something new! I enjoy opportunities to build out new capabilities, while focusing on functionality, performance and user experience.
-            I currently work at General Mills, where I can be found building performant, accesible, and visually appealing websites, check out some of my work below.
+            I have {new Date().getFullYear() - 2017}+ years of full-stack development experience and am determined to make an impact in a rapidly changing industry.
+            Capable in modern web technologies, back-end systems, and DevOps toolchains, I seek opportunities to build out new and improved user experiences.
+            I focus on functionality, performance, and visuals to build a better, more inclusive web for all users.
             </p>
           </div>
 
@@ -36,8 +35,7 @@ const About = () => {
             </div>
             <div className={style.visualTextText}>
               <p>
-                Outside of work I have a variety of side projects that I like to tinker with when I have time.
-                This includes web and game development, design, and photography.
+              Outside of work, I have a variety of side projects that I use to improve technical capabilities and explore new technologies. Past projects have included web and game development, design, and photography. Recently, I have been researching blockchain technologies and starting to learn web3 development on Ethereum and layer-2 solutions like Polygon.
                 <br></br>
                 <Link to={'/projects'} className={style.link}>View my side projects.</Link>
               </p>
@@ -52,8 +50,7 @@ const About = () => {
             </div>
             <div className={style.visualTextText}>
               <p>
-                I also like to get away from a screen and get some activity. I spend a lot of time skiing, mountain biking, rock climbing, and exploring the outdoors.
-                When I'm not in Minneapolis, you can find me along the North Shore of Lake Superior, as far away from the city as possible.
+                I also like to get away from a screen and get some activity. I spend a lot of time skiing, mountain biking, rock climbing, and exploring the outdoors. When I'm not in Minneapolis, you can find me along the North Shore of Lake Superior or on a mountain in Big Sky, Montana.
                 <br></br>
                 <Link to={'/hobbies'} className={style.link}>View my hobbies.</Link>
               </p>

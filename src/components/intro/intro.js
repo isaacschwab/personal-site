@@ -26,8 +26,8 @@ const Intro = () => {
 
         <div className={style.textContainer}>
           <h1 className={style.heading}>Hello! Let me introduce myself, I'm<br></br><span className={style.name}>Isaac Schwab</span></h1>
-          <p>I’m a software engineer, that is based in Minneapolis, MN.
-            I recieved a degree in Computer Science from the University of Minnesota. Read more about me or my work below.
+          <p>I’m a software engineer based in Minneapolis, Minnesota.
+          I received a degree in Computer Science from the University of Minnesota. Read more about me and my work below.
           </p>
         </div>
         

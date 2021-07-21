@@ -158,33 +158,86 @@
   },
   {
     "type" : "project",
-    "slug" : "nightscapes",
-    "title" : "Long-Exposure Starscape Photography",
-    "description" : "Looking up to the stars has always been awe inspiring. After seeing many long-exposure astrophotography and nightscapes, I attempt my own in Northern Minnesota.",
-    "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
-    "skills": ["Adobe Lightroom, Adobe Photoshop"],
-    "long-desc" : "",
+    "slug" : "vr-game",
+    "title" : "VR Wave Survival Game",
+    "description" : "An exploration in virtual reality game development and the power of VR devices.",
+    "task" : ["Explore the power of VR", "Build a VR Game", "Use locomotion and controller tracking"],
+    "skills": ["Unreal Engine", "C++", "Game Design"],
+    "long-desc" : "This game was part of a final project for a grad level course that I took in college. Part of the final was writing a paper that discussed the development and final product of the project. The abstract of the <a target=\"_blank\" href=\"../VR_Final_Project_Isaac_Schwab.pdf\">paper</a> and a video are below.<br><br><i>\"The goal of this project was to build a virtual reality wave survival game. The game is an immersive experience that showcases the current generation of virtual reality systems like the HTC Vive. The gameplay involves a player defending against waves of attacking enemy monsters. The player can interact with beam rifles and lightsabers to attack the oncoming enemies. A realistic environment was created to help immerse the player in the experience. Room scale is built into the game, thus allowing the player to use slight locomotion to avoid enemy attacks. The incorporation of fast paced waves and player movement, not only create a mentally stimulating game, but lead to a substantially physical experience for the users. The combination of mental and physical interaction in this game creates an immersive, enjoyable experience. This type of game truly showcases the power of the HTC Vive and the current state of virtual reality.\"</i><br><br>I really enjoyed building this game, and spent a lot of time working on it. The video recording below doesn’t give the game justice, the video resolution is poor, I couldn’t capture the sound, and to truly experience it as intended, you need a VR headset. The video should at least showcase the features of the game. I will also attach some screenshots I took while building the game. I will try and record a better video with sound once I have an area to set up my VR headset.",
     "image" : {
-      "src" : "../images/projects/starscape-main.jpg",
-      "alt" : "Long exposure photo of the stars in the night sky"
+      "src" : "../images/projects/vrgame/vrgame-main.png",
+      "alt" : "Player perspective in VR game, attacking a monster"
+    },
+    "video" : {
+      "src" : "https://www.youtube.com/embed/22960wVEV5U",
+      "title" : "Virtual Reality Wave Survival Game - Unreal Engine"
     },
     "detail" : [
       {
         "title" : "",
         "text" : "",
+        "caption" : "Blueprint programming for the main gamemode in the game.",
         "image" : {
-          "src" : "../images/projects/partypack/partypack-howitworks.png",
-          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+          "src" : "../images/projects/vrgame/gamemode.PNG",
+          "alt" : "Blueprint programming for the main gamemode in the game."
         }
       },
       {
         "title" : "",
         "text" : "",
+        "caption" : "Editor view of the game level landscape.",
         "image" : {
-          "src" : "../images/projects/partypack/partypack-howitworks.png",
-          "alt" : "Homescreen of Party Pack web app, page has two sections, one for players to join, one for host to create a game"
+          "src" : "../images/projects/vrgame/landscape.PNG",
+          "alt" : "Editor view of the game level landscape."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "View of the play area and the various spawners, objects, and environment effects.",
+        "image" : {
+          "src" : "../images/projects/vrgame/effectsobjects.PNG",
+          "alt" : "View of the play area and the various spawners, objects, and environment effects."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Attacking the monster with the saber and causing the hit animation.",
+        "image" : {
+          "src" : "../images/projects/vrgame/saberattack.png",
+          "alt" : "Attacking the monster with the saber and causing the hit animation."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Firing animation of gun and the hit effect on the monster.",
+        "image" : {
+          "src" : "../images/projects/vrgame/gunshot.png",
+          "alt" : "Firing animation of gun and the hit effect on the monster."
         }
       }
+    ]
+  },
+  {
+    "type" : "project",
+    "slug" : "galaxy-gauntlet",
+    "title" : "Galaxy Gauntlet",
+    "description" : "A small video game created to learn Unreal Engine and basics to video game development.",
+    "task" : ["Learn a game engine", "Build a playable game", "Create a nice visual experience"],
+    "skills": ["Unreal Engine", "C++", "Game Design"],
+    "long-desc" : "Galaxy Gauntlet is a small game that I created for a final in college. The project needed to meet a few criteria, but overall was open ended. The reasoning behind building a game was to learn more about game development and gain experience with Unreal Engine. I had limited time to complete the project, so I decided to go with an endless runner style game. Galaxy Gauntlet showcases random terrain generation, a visually appealing environment, player health, power ups, and score mechanisms. Gameplay is quite simple: keyboard to move left and right, and spacebar to jump. The player runs forward at a constant speed and must avoid dangerous terrain. While moving they can run through power ups that grant them abilities for a set time. The farther a player runs, the higher their score will be. The game ends when the player loses all their health or collides with an object.<br><br>To create the game I used a variety of tutorials and resources found online. The Unreal Marketplace had a nice variety of free assets and starter content that gave me a nice base to expand upon. Most of the development involved using the blueprinting system built into Unreal, as well as extending certain classes using C++.<br><br>This project was a great introduction to Unreal Engine and game development. The video below is a short demo of the project.",
+    "image" : {
+      "src" : "../images/projects/galaxygauntlet/galaxygauntlet-main.png",
+      "alt" : "Gameplay of Galaxy Gauntlet game"
+    },
+    "video" : {
+      "src" : "https://www.youtube.com/embed/BmjiTYJBkCc",
+      "title" : "Galaxy Gauntlet - Unreal Engine"
+    },
+    "detail" : [
+
     ]
   },
   {
@@ -253,7 +306,7 @@
     "type" : "work",
     "slug" : "boxtops4education",
     "title" : "Box Tops for Education",
-    "description" : "Building and maintaining the services and data that power the mobile Box Tops for Education app.",
+    "description" : "The API and services that power the Box Tops for Education mobile app and website.",
     "task" : ["Enable app features via API developmen", "Refactor legacy code and processes", "Stand up infrastructure to support app services"],
     "skills": [".NET", "SQL", "Postman"],
     "long-desc" : "As a developer on the Box Tops team, I split my time between a variety of tasks. They can be summarized as building new functionality and improving existing code and systems. Building new features has encompassed small changes like building queries to retrieve user earnings data, making calculations, and then returning it as a response to an API GET call. To more advanced projects that involve integrating with 3rd party API’s, standing up database tables and queries, and writing the backend code to process the API requests. I make sure to focus on testing and performance. Testing involves creating unit tests, integration tests using Postman, and then end to end testing using a QA environment.<br><br>A favorite project of mine was building the Unlock Brighter Futures campaign. This campaign was launched nationally as an initiative to reward new and existing Box Tops for Education users and their schools. At a high level, the campaign would allow app users to scan a QR code, or enter a code found on General Mill’s products for a chance to win a prize. Eligible products would be on shelves in major retailers for a 6 month period. Sweepstakes campaigns of this magnitude involve many parties working together. As the developer building the backend of the API to power the campaign, I worked closely with internal and external teams to coordinate implementation and testing of the combined systems. My focus on communication and attention to detail were pivotal in the success of this campaign. I was proud of the end result and the teamwork it took to get there.<br><br>Other projects of mine on the Box Tops team involved refactoring and cleaning up existing code. I have always enjoyed the process of improving code, so these projects were a highlight for me. Due to lack of tests in legacy code, I would often need to write characterization tests to verify that my refactor would not impact the production API. The refactors included updating code libraries, reworking architectures, making code more readable and performant, and writing tests.<br><br>My time working on the Box Tops for Education platform exposed me to a lot of new skills, tools, and technologies. It greatly increased my experience as a full-stack developer.",
@@ -284,7 +337,7 @@
     "title" : "Chex Mix",
     "description" : "A Wordpress website with product specific patterns and a simplified authoring experience.",
     "task" : ["Build a performant, appealing, and accessible website", "Enable product unique patterns", "Create a simplified authoring experience"],
-    "skills": ["Wordpress", "CSS", "PHP"],
+    "skills": ["Wordpress", "PHP", "HTML/CSS"],
     "long-desc" : "The Chex Mix project started as a revamp to the previous version of the site. After seeing the existing code base from the previous external agency, I decided a fresh start was best. The next steps involved a fresh redesign of the website. The design focused on patterns created from Chex Mix pieces. Product packaging was used to introduce color throughout the site. I built the website using our team's custom Wordpress theme and then extended it to meet the criteria for the clients. A lot of the heavy lifting was done to give website authors a simplified experience when authoring the site. Advanced Custom Fields was used to build custom partials and product templates for the smooth authoring experience. The colored pattern was created using css backgrounds and color blending techniques. This allowed one pattern asset to be used, saving on page load times. Another unique piece of the Chex website was handling nutrition information for multi-pack products. I created a module where authors could select multiple authored products and the site would display them as a drop down. The selected product would display it’s nutritional information and color scheme. I’m happy with how these customizations turned out and think the completed website met all the goals for the project.",
     "icon" : {
       "src" : "../images/work/chex/chex.svg",
@@ -331,8 +384,8 @@
     "title" : "Larabar Canada",
     "description" : "A multilingual Wordpress solution with bright colors, fun imagery, and a two tier navigation menu.",
     "task" : ["Build a performant, appealing, and accessible website", "Integrate product and recipe data from internal APIs", "Create a multi-tier navigation menu"],
-    "skills": ["GatsbyJS", "Wordpress", "React"],
-    "long-desc" : "A Gatsby + Wordpress solution that consumes data from internal APIs. Features advanced filtering and multi-tier navigation menu.",
+    "skills": ["Wordpress", "PHP", "HTML/CSS"],
+    "long-desc" : "The Larabar Canada website provided a great opportunity to work with bright, fun colors, and really showcase the brand design. The site was built using our team's custom Wordpress theme, which uses Advanced Custom Fields, and custom PHP to create a simple, intuitive authoring experience. One of the challenges with this project was supporting both English and Canadian languages. To support both languages I created the site as a Wordpress multisite. This allows for cohesive design and experience on both languages of the website, with the added benefit that content can be authored in each instance. Another requirement of this project was having a two tier navigation menu to showcase the different product categories. This involved creating a custom wp_nav_menu that was still accessible and functioned with the default menu authoring. I was happy with the end result of this website, and I enjoyed eating Larabars in the process of building it.",
     "icon" : {
       "src" : "../images/work/larabar/protein-bar.svg",
       "alt" : "Icon of a protein bar"

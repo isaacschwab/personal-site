@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout/'
 import SEO from '../components/seo'
 import ImgBasic from '../components/img-basic'
+import Video from '../components/video'
 
 import 
 { 
@@ -54,6 +55,12 @@ const ProjectDetail = ({ data }) => {
     <div>
       <p dangerouslySetInnerHTML={{ __html: project.long_desc }}></p>
     </div>
+    {project.video &&
+      <Video
+        videoSrcURL={project.video.src}
+        videoTitle={project.video.title}
+      />
+    }
     <section className={`component center`}>
     {project.detail.map((item, index) => {
       console.log(item)
@@ -92,6 +99,10 @@ export const query = graphql`
             gatsbyImageData(width: 1000, quality: 90)
           }
         }
+      }
+      video {
+        src
+        title
       }
       detail {
         text

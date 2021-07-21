@@ -12,7 +12,7 @@ const Work = ({ data }) => {
     <Layout>
     <SEO title="Work - Isaac Schwab" />
     <h1>Work</h1>
-    <p>Check out some of some of the projects I have done for work!</p>
+    <p>Check out some projects I have worked on!</p>
     <section className={`component`}>
         {work.edges.map(item => {
           count++
