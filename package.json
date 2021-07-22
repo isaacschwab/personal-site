@@ -2,7 +2,7 @@
   "name": "personal-site",
   "private": true,
   "description": "The personal development portfolio of Isaac Schwab",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "Isaac Schwab <schwab.isaac@gmail.com>",
   "dependencies": {
     "gatsby": "^3.0.4",
