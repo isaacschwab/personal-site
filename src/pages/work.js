@@ -10,7 +10,7 @@ const Work = ({ data }) => {
   let count = 0
   return (
     <Layout>
-    <SEO title="Work - Isaac Schwab" />
+    <SEO title="Work" />
     <h1>Work</h1>
     <p>Check out some projects I have worked on!</p>
     <section className={`component`}>

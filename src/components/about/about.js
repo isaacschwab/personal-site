@@ -25,8 +25,6 @@ const About = () => {
             </p>
           </div>
 
-          <Work />
-
           <div className={`${style.visualTextWrap} ${style.visualTextWrap}`}>
             <div className={style.visualTextVisual}>
               <img className={style.icon} src={webImage} alt="Graphic icon of a computer screen interface, representing web and game development"></img>
@@ -35,7 +33,7 @@ const About = () => {
             </div>
             <div className={style.visualTextText}>
               <p>
-              Outside of work, I have a variety of side projects that I use to improve technical capabilities and explore new technologies. Past projects have included web and game development, design, and photography. Recently, I have been researching blockchain technologies and starting to learn web3 development on Ethereum and layer-2 solutions like Polygon.
+                Outside of work, I have a variety of side projects that I use to improve technical capabilities and explore new technologies. Past projects have included web and game development, design, and photography. Recently, I have been researching blockchain technologies and starting to learn web3 development on Ethereum and layer-2 solutions like Polygon.
                 <br></br>
                 <Link to={'/projects'} className={style.link}>View my side projects.</Link>
               </p>
@@ -50,12 +48,15 @@ const About = () => {
             </div>
             <div className={style.visualTextText}>
               <p>
-                I also like to get away from a screen and get some activity. I spend a lot of time skiing, mountain biking, rock climbing, and exploring the outdoors. When I'm not in Minneapolis, you can find me along the North Shore of Lake Superior or on a mountain in Big Sky, Montana.
+                My time away from computer screens is filled with a variety of hobbies. I spend a lot of time mountain biking, rock climbing, skiing, and exploring the outdoors. When I'm not in Minneapolis, you will often find me along the North Shore of Lake Superior or on one of Minnesota’s many lakes.
                 <br></br>
                 <Link to={'/hobbies'} className={style.link}>View my hobbies.</Link>
               </p>
             </div>
           </div>
+
+          <Work />
+
         </div>
       </div>
       

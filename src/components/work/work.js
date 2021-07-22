@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
 import WorkTile from "./work-tile"
 
-import { workSection, title, container }from "./work.module.scss"
+import { title, container }from "./work.module.scss"
 
 const Work = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,7 @@ const Work = () => {
 
   return (
     <>
-    {/* <h2 className={title}>Work Highlights</h2> */}
+    <h2 className={title}>Work Highlights</h2>
     <div className={container}>
       {data.work.edges.map(item => {
         return (

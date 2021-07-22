@@ -6,7 +6,7 @@
     "description" : "A socket.io based web app for friends to play party style games, like trivia, using their phones as controllers.",
     "task" : ["Create a room based game", "Improve React skillset", "Gain exposure to socket.io"],
     "skills" : ["NodeJS", "React", "socket.io"],
-    "long-desc" : "I started this project as a way to experiment with socket.io, NodeJS, and React. I figured that in addition to expanding my knowledge of these technologies, I could have some fun building a web app that could be used amongst friends. Since I started the project, I find myself coming back to it every couple months to add more functionality. In its current state, Party Pack consists of a nodeJS server, and a React website, which is how users interact with the site. Socket.io is used to perform all communication between the users of the site. The intention of Party Pack is to connect friends in person or virtually, through party style games, so what are the games?<br><br>The initial game that I built is called Trivia Blast. This game can be played with any number of players, either on mobile or desktop browsers. In this game there needs to be a host device, which acts as the main display for the game. It works best for the host to either cast or connect their display to a TV, or if playing virtually, the host can stream their screen. The players then connect using the room code that was generated for the host. The host can configure settings, and then when everyone is connected, start the game. Gameplay is currently round based trivia. Each round consists of a question, and multiple potential answers. When the round starts, users get the answers displayed on their devices, and need to select an answer before time runs out. A fun mechanic to work with in this gamemode was time. Each question has a set amount of time, and based on when a user answers the question they receive a higher score. Once the time has completed, player devices can no longer answer, and the correct answer is displayed on the host screen. The scoreboard is shown in-between each round and at the end of the game to show the final standings.<br><br>I have a list of improvements and ideas that I plan to add to Trivia Blast and Party Pack as a whole. Some of the main ones include: improved visuals/design, connect/reconnect functionality, new scoring modes, animations, improved performance, and a persistent database. And of course, I’d like to add new game modes. I have started an implementation of the Spotify SDK to help build a base for a music based gamemode.<br><br>Overall, I see this as a fun side project that I can slowly build upon, and use as a medium to explore web technologies. It also has the added benefit of being used when spending time with friends and family.",
+    "long-desc" : "I started this project as a way to experiment with socket.io, NodeJS, and React. I figured that in addition to expanding my knowledge of these technologies, I could have some fun building a web app that could be used amongst friends. Since I started the project, I find myself coming back to it every couple months to add more functionality. In its current state, Party Pack consists of a nodeJS server and a React website, which is how users interact with the site. Socket.io is used to perform all communication between the users of the site. The intention of Party Pack is to connect friends in person or virtually through party style games.<br><br>The first game I focused on building is called Trivia Blast. This game can be played with any number of players, either on mobile or desktop browsers. In this game there needs to be a host device, which acts as the main display for the game. It works best for the host to either cast or connect their display to a TV, or if playing virtually, the host can stream their screen. The players then connect using the room code that was generated for the host. The host can configure settings, and then when everyone is connected, start the game. Gameplay is currently round based trivia. Each round consists of a question, and multiple potential answers. When the round starts, users get the answers displayed on their devices, and need to select an answer before time runs out. A fun mechanic to work with in this gamemode was time. Each question has a set amount of time, and based on when a user answers the question they receive a higher score. Once the time has completed, player devices can no longer answer, and the correct answer is displayed on the host screen. The scoreboard is shown in-between each round and at the end of the game to show the final standings.<br><br>I have a list of improvements and ideas that I plan to add to Trivia Blast and Party Pack as a whole. Some of the main ones include: improved visuals/design, connect/reconnect functionality, new scoring modes, animations, improved performance, and a persistent database. And of course, I’d like to add new game modes. I have started an implementation of the Spotify SDK to help build a base for a music based gamemode.<br><br>Overall, I see this as a fun side project that I can slowly build upon, and use as a medium to explore web technologies. It also has the added benefit of being used when spending time with friends and family.",
     "url" : "https://party-pack.herokuapp.com/",
     "image" : {
       "src" : "../images/projects/partypack-main.png",
@@ -15,7 +15,7 @@
     "detail" : [
       {
         "title" : "How it works",
-        "text" : "The web app works on desktop or mobile browsers, and requires a host device, in addition to the other player's devices. Hosts should either cast the game to a TV (if playing in person) or stream their screen to other players. Currently, Trivia Blast is the functioning gamemode, so I will use that as an example. In the future I plan to add more gamemodes.",
+        "text" : "The web app works on desktop or mobile browsers, and requires a host device, in addition to the other player's devices. Hosts should either cast the game to a TV (if playing in person) or stream their screen to other players. Currently, Trivia Blast is the functioning gamemode, so I will use that as an example. In the future I plan to add more game modes.",
         "caption" : "Homepage of Party Pack, players can join games using a code, and hosts can start a new game lobby.",
         "image" : {
           "src" : "../images/projects/partypack/partypack-howitworks.png",
@@ -73,7 +73,7 @@
     "type" : "project",
     "slug" : "led-stars",
     "title" : "Fiber Optic Strand Star Photos",
-    "description" : "A more hands on project where I use astrophotography images plus fiber optic strands to create a different type of starscape experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
+    "description" : "A more hands-on project where I use astrophotography images plus fiber optic strands to create a different type of starscape experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
     "task" : ["Combine a physical project with coding", "Explore astrology libraries and code", "Use Python to apply image processing"],
     "skills": ["d3.js", "GatsbyJS", "Python - OpenCV"],
     "long-desc" : "I was inspired to start this project from posts I had seen about star ceilings that people were building in their houses. As building a new ceiling wasn’t an option, I thought a scaled down version would be a fun project. I decided to use an astrophotography photo for the template in the initial proof of concept. The image was printed and then glued to some cardboard. The next steps were pretty slow and monotonous. I poked holes, fed the fiber optic strands through, and glued them in place, one by one. Eventually, I ended up with the proof of concept you see below in the first picture.<br><br>I was happy with the test, but wanted to now include a coding element to this project. I wanted to improve how to determine which stars to feed fiber strands through. For this I used the OpenCV library in Python to detect the star's brightness. The idea was to pick out the brightest stars and set a limit based on the number of fiber strands I could use. This resulted in an image with just the stars, all other detail was removed. Even with the stars that I wanted highlighted, I lacked any control of the stars in the sky, and was limited to a limited selection of astrophotography photos.<br><br>To remedy this issue, I wanted to attempt generating the night sky. I found some d3.js libraries that people had created solely for this purpose. I forked an astronomy library called celestial-d3, and started making modifications. The initial changes I worked towards were dropping the library into React and Gatsby, followed by outputting the image as an svg. The generated star approach had the added benefit of complete control of the stars (number, size, color, etc.) and better control over exporting the image for use as a template.<br><br>Next steps include improving on each part of the project as a whole. I need to alter the process of creating the physical fiber optic night sky. I plan to use different materials, and would like to semi-automate part of the task. I’m going to move forward with the d3-celestial part of the project, over OpenCV. I enjoyed learning an astronomy library to generate the stars, and believe the potential it provides is superior to actual photos. I will keep making changes to my fork of the library, so that my next revision to the physical product is of much higher quality.",
@@ -215,7 +215,7 @@
         "caption" : "Firing animation of gun and the hit effect on the monster.",
         "image" : {
           "src" : "../images/projects/vrgame/gunshot.png",
-          "alt" : "Firing animation of gun and the hit effect on the monster."
+          "alt" : "Firing animation of a gun and the hit effect on the monster."
         }
       }
     ]
@@ -237,7 +237,7 @@
       "title" : "Galaxy Gauntlet - Unreal Engine"
     },
     "detail" : [
-
+  
     ]
   },
   {
@@ -307,7 +307,7 @@
     "slug" : "boxtops4education",
     "title" : "Box Tops for Education",
     "description" : "The API and services that power the Box Tops for Education mobile app and website.",
-    "task" : ["Enable app features via API developmen", "Refactor legacy code and processes", "Stand up infrastructure to support app services"],
+    "task" : ["Enable app features via API development", "Refactor legacy code and processes", "Stand up infrastructure to support app services"],
     "skills": [".NET", "SQL", "Postman"],
     "long-desc" : "As a developer on the Box Tops team, I split my time between a variety of tasks. They can be summarized as building new functionality and improving existing code and systems. Building new features has encompassed small changes like building queries to retrieve user earnings data, making calculations, and then returning it as a response to an API GET call. To more advanced projects that involve integrating with 3rd party API’s, standing up database tables and queries, and writing the backend code to process the API requests. I make sure to focus on testing and performance. Testing involves creating unit tests, integration tests using Postman, and then end to end testing using a QA environment.<br><br>A favorite project of mine was building the Unlock Brighter Futures campaign. This campaign was launched nationally as an initiative to reward new and existing Box Tops for Education users and their schools. At a high level, the campaign would allow app users to scan a QR code, or enter a code found on General Mill’s products for a chance to win a prize. Eligible products would be on shelves in major retailers for a 6 month period. Sweepstakes campaigns of this magnitude involve many parties working together. As the developer building the backend of the API to power the campaign, I worked closely with internal and external teams to coordinate implementation and testing of the combined systems. My focus on communication and attention to detail were pivotal in the success of this campaign. I was proud of the end result and the teamwork it took to get there.<br><br>Other projects of mine on the Box Tops team involved refactoring and cleaning up existing code. I have always enjoyed the process of improving code, so these projects were a highlight for me. Due to lack of tests in legacy code, I would often need to write characterization tests to verify that my refactor would not impact the production API. The refactors included updating code libraries, reworking architectures, making code more readable and performant, and writing tests.<br><br>My time working on the Box Tops for Education platform exposed me to a lot of new skills, tools, and technologies. It greatly increased my experience as a full-stack developer.",
     "icon" : {
@@ -420,9 +420,11 @@
         "caption" : "",
         "image" : {
           "src" : "../images/work/larabar/productdetail.png",
-          "alt" : "Detail view of a product detaul page on the Larabar website"
+          "alt" : "Detail view of a product detail page on the Larabar website"
         }
       }
     ]
   }
-]
+ ]
+ 
+ 

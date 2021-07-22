@@ -9,7 +9,7 @@ const Hobbies = ({ data }) => {
   const { hobbies } = data
   return (
     <Layout>
-      <SEO title="Hobbies - Isaac Schwab" />
+      <SEO title="Hobbies" />
       <h1>Hobbies</h1>
       <p>
         A lot of my interests involve being outside and enjoying nature. Living in Minnesota,

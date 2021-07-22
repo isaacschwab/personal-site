@@ -8,7 +8,7 @@ import About from "../components/about"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Isaac Schwab" />
+    <SEO title="Home" />
     <Intro></Intro>
     <About></About>
   </Layout>
