@@ -19,9 +19,7 @@ const About = () => {
           <div className={style.bio}>
             <h2>About Me</h2>
             <p>
-            I have {new Date().getFullYear() - 2017}+ years of full-stack development experience and am determined to make an impact in a rapidly changing industry.
-            Capable in modern web technologies, back-end systems, and DevOps toolchains, I seek opportunities to build out new and improved user experiences.
-            I focus on functionality, performance, and visuals to build a better, more inclusive web for all users.
+             I have {new Date().getFullYear() - 2017}+ years of full-stack development experience and am determined to make an impact in a rapidly changing industry. I’m currently involved with web3 development building FishFight.one, an NFT fighting game on the Harmony blockchain. I’m advocating for web3 developers as a Governor on the Harmony Developer DAO. My toolset includes developing frontends, APIs, backends, and applications on EVM compatible chains. I focus on functionality, performance, and visuals to build a better, more inclusive web for all users.
             </p>
           </div>
 
@@ -33,7 +31,7 @@ const About = () => {
             </div>
             <div className={style.visualTextText}>
               <p>
-                Outside of work, I have a variety of side projects that I use to improve technical capabilities and explore new technologies. Past projects have included web and game development, design, and photography. Recently, I have been researching blockchain technologies and starting to learn web3 development on Ethereum and layer-2 solutions like Polygon.
+              Outside of work, I have a variety of side projects that I use to improve technical capabilities and explore new technologies. Recently, I dove head first into web3 development and blockchain technologies. Past projects have included web and game development, design, and photography.
                 <br></br>
                 <Link to={'/projects'} className={style.link}>View my side projects.</Link>
               </p>

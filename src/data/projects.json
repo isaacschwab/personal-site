@@ -242,6 +242,40 @@
   },
   {
     "type" : "work",
+    "slug" : "fishfight",
+    "title" : "FishFight.one",
+    "description" : "A NFT fighting game, built on the Harmony ONE blockchain.",
+    "task" : ["Create a fun, simple, low-risk crypto game", "Add more utility to traditional ERC721 NFTs", "Integrate with Unity to create a better game experience"],
+    "skills": ["Solidity", "Web3js", "React Typescript"],
+    "long-desc" : "The FishFight.one game is an ongoing development project that is rapidly approaching a mainnet launch. The game is developed on the <a target=\"_blank\" href=\"https://www.harmony.one/\">Harmony</a> blockchain and has received a grant from Harmony to help fund the continued development and launch. My role has been developing the game’s Solidity smart contracts, React frontend, and the server that handles mint events to generate ERC721 compliant metadata. More info coming soon. Check out the testnet version of the game in the meantime!",
+    "icon" : {
+      "src" : "../images/work/fishfight/fighting.svg",
+      "alt" : "Icon of fighting fish"
+    },
+    "image" : {
+      "src" : "../images/work/fishfight/fishfight.png",
+      "alt" : "Hero image of FishFight.one"
+    },
+    "url" : "https://fishfight.one/",
+    "detail" : [
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/fishfight/fishfight.png",
+          "alt" : "Fight view of FishFight.one"
+        }
+      },
+      {
+        "caption" : "",
+        "image" : {
+          "src" : "../images/work/fishfight/ocean.png",
+          "alt" : "Ocean view of FishFight.one"
+        }
+      }
+    ]
+  },
+  {
+    "type" : "work",
     "slug" : "progresso-soup",
     "title" : "Progresso Soups",
     "description" : "The consumer facing website for the Progresso Soups brand built using GatsbyJS and Wordpress.",
