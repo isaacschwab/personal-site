@@ -26,8 +26,13 @@ const Intro = () => {
 
         <div className={style.textContainer}>
           <h1 className={style.heading}>Hello! Let me introduce myself, I'm<br></br><span className={style.name}>Isaac Schwab</span></h1>
-          <p>I’m a software engineer based in Minneapolis, Minnesota.
-          I received a degree in Computer Science from the University of Minnesota. Read more about me and my work below.
+          <p>I’m a Senior Software Engineer at <a target="_blank\" href="https://www.zynga.com/">Zynga</a>, where I am building Sugartown, a web games platform.
+          <br></br>
+          <br></br>
+          I received a degree in Computer Science from the University of Minnesota. 
+          <br></br>
+          <br></br>
+          Read more about me and my work below.
           </p>
         </div>
         

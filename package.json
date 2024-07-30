@@ -1,45 +1,32 @@
 {
-  "name": "personal-site",
-  "private": true,
-  "description": "The personal development portfolio of Isaac Schwab",
+  "name": "schwab-site",
   "version": "1.0.0",
-  "author": "Isaac Schwab <schwab.isaac@gmail.com>",
-  "dependencies": {
-    "gatsby": "^3.0.4",
-    "gatsby-image": "^3.0.0",
-    "gatsby-plugin-image": "^1.0.0",
-    "gatsby-plugin-manifest": "^3.0.0",
-    "gatsby-plugin-offline": "^4.0.0",
-    "gatsby-plugin-react-helmet": "^4.0.0",
-    "gatsby-plugin-sass": "^4.0.2",
-    "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-transformer-inline-svg": "^0.1.0",
-    "gatsby-transformer-json": "^3.0.0",
-    "gatsby-transformer-sharp": "^3.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^5.2.1",
-    "sass": "^1.32.8"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2"
-  },
+  "private": true,
+  "description": "schwab-site",
+  "author": "Isaac Schwab",
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "clean": "gatsby clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/isaacschwab/personal-site"
+  "dependencies": {
+    "gatsby": "^5.13.5",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-inline-svg": "^1.2.0",
+    "gatsby-transformer-json": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.77.8"
   }
 }

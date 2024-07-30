@@ -61,6 +61,12 @@ const ProjectDetail = ({ data }) => {
         videoTitle={project.video.title}
       />
     }
+    {project?.video2 &&
+      <Video
+        videoSrcURL={project.video2.src}
+        videoTitle={project.video2.title}
+      />
+    }
     <section className={`component center`}>
     {project.detail.map((item, index) => {
       console.log(item)
@@ -101,6 +107,10 @@ export const query = graphql`
         }
       }
       video {
+        src
+        title
+      }
+      video2 {
         src
         title
       }

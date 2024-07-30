@@ -19,9 +19,11 @@ const About = () => {
           <div className={style.bio}>
             <h2>About Me</h2>
             <p>
-             I have {new Date().getFullYear() - 2017}+ years of full-stack development experience and am determined to make an impact in a rapidly changing industry. I’m currently involved with web3 development building FishFight.one, an NFT fighting game on the Harmony blockchain. I’m advocating for web3 developers as a Governor on the Harmony Developer DAO. My toolset includes developing frontends, APIs, backends, and applications on EVM compatible chains. I focus on functionality, performance, and visuals to build a better, more inclusive web for all users.
+             I am a software engineer with {new Date().getFullYear() - 2017}+ years of full-stack development experience. I have a foundation in UI/UX and API development, with a strong focus on performance, functionality, and accessibility. I excel at working with cross-functional teams, including designers, product managers, and engineers, this has allowed me to align varying perspectives to deliver high-quality solutions. Products have included websites, mobile apps, and web platforms. Recently, I’ve been focusing on game development and blockchain integrations with web platforms. I am dedicated to building innovative products and features that create great experiences for all users.
             </p>
           </div>
+
+          <Work />
 
           <div className={`${style.visualTextWrap} ${style.visualTextWrap}`}>
             <div className={style.visualTextVisual}>
@@ -29,6 +31,7 @@ const About = () => {
               <img className={style.icon} src={designImage} alt="Graphic icon of a pencil and a ruler, representing design"></img>
               <img className={style.icon} src={cameraImage} alt="Graphic icon of a camera, representing photography"></img>
             </div>
+
             <div className={style.visualTextText}>
               <p>
               Outside of work, I have a variety of side projects that I use to improve technical capabilities and explore new technologies. Recently, I dove head first into web3 development and blockchain technologies. Past projects have included web and game development, design, and photography.
@@ -53,7 +56,7 @@ const About = () => {
             </div>
           </div>
 
-          <Work />
+          
 
         </div>
       </div>

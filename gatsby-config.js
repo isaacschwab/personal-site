@@ -1,3 +1,6 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     title: `Isaac Schwab`,
@@ -9,51 +12,58 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+  {
+    resolve: `gatsby-plugin-sass`,
+    options: {
+      additionalData: `@use "${__dirname}/src/global-styles/vars.scss" as *;`,
+      sassOptions: {
+        includePaths: [
+          'src/components/',
+          'src/templates/'
+        ]
+      }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/data`,
-      },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `./src/images`,
     },
-    `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-json`,
-    `gatsby-transformer-inline-svg`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `schwab-personal-site`,
-        short_name: `schwab`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/is-icon.png`, // This path is relative to the root of the site.
-      },
+    __key: "images"
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `./src/data`,
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        additionalData: `@use "${__dirname}/src/global-styles/vars.scss" as *;`,
-        sassOptions: {
-          includePaths: [
-            'src/components/',
-            'src/templates/'
-          ]
-        }
-      },
+    __key: "data"
+  },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `schwab-personal-site`,
+      short_name: `schwab`,
+      start_url: `/`,
+      background_color: `#663399`,
+      theme_color: `#663399`,
+      display: `minimal-ui`,
+      icon: `src/images/is-icon.png`, // This path is relative to the root of the site.
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
+  },
+  "gatsby-plugin-react-helmet",
+  "gatsby-plugin-image", 
+  "gatsby-plugin-sharp", 
+  "gatsby-transformer-sharp", 
+  "gatsby-transformer-json",
+  "gatsby-transformer-inline-svg",
+  // {
+  //   resolve: 'gatsby-source-filesystem',
+  //   options: {
+  //     "name": "images",
+  //     "path": "./src/images/"
+  //   },
+  //   __key: "images"
+  // }
+]
+};

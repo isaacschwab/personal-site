@@ -71,6 +71,90 @@
   },
   {
     "type" : "project",
+    "slug" : "vr-game",
+    "title" : "VR Wave Survival Game",
+    "description" : "An exploration in virtual reality game development and the power of VR devices.",
+    "task" : ["Explore the power of VR", "Build a VR Game", "Use locomotion and controller tracking"],
+    "skills": ["Unreal Engine", "C++", "Game Design"],
+    "long-desc" : "This game was part of a final project for a grad level course that I took in college. Part of the final was writing a paper that discussed the development and final product of the project. The abstract of the <a target=\"_blank\" href=\"https://isaacschwab.dev/VR_Final_Project_Isaac_Schwab.pdf\">paper</a> and a video are below.<br><br><i>\"The goal of this project was to build a virtual reality wave survival game. The game is an immersive experience that showcases the current generation of virtual reality systems like the HTC Vive. The gameplay involves a player defending against waves of attacking enemy monsters. The player can interact with beam rifles and lightsabers to attack the oncoming enemies. A realistic environment was created to help immerse the player in the experience. Room scale is built into the game, thus allowing the player to use slight locomotion to avoid enemy attacks. The incorporation of fast paced waves and player movement, not only create a mentally stimulating game, but lead to a substantially physical experience for the users. The combination of mental and physical interaction in this game creates an immersive, enjoyable experience. This type of game truly showcases the power of the HTC Vive and the current state of virtual reality.\"</i><br><br>I really enjoyed building this game, and spent a lot of time working on it. The video recording below doesn’t give the game justice, the video resolution is poor, I couldn’t capture the sound, and to truly experience it as intended, you need a VR headset. The video should at least showcase the features of the game. I will also attach some screenshots I took while building the game. I will try and record a better video with sound once I have an area to set up my VR headset.",
+    "image" : {
+      "src" : "../images/projects/vrgame/vrgame-main.png",
+      "alt" : "Player perspective in VR game, attacking a monster"
+    },
+    "video" : {
+      "src" : "https://www.youtube.com/embed/22960wVEV5U",
+      "title" : "Virtual Reality Wave Survival Game - Unreal Engine"
+    },
+    "detail" : [
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Blueprint programming for the main gamemode in the game.",
+        "image" : {
+          "src" : "../images/projects/vrgame/gamemode.PNG",
+          "alt" : "Blueprint programming for the main gamemode in the game."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Editor view of the game level landscape.",
+        "image" : {
+          "src" : "../images/projects/vrgame/landscape.PNG",
+          "alt" : "Editor view of the game level landscape."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "View of the play area and the various spawners, objects, and environment effects.",
+        "image" : {
+          "src" : "../images/projects/vrgame/effectsobjects.PNG",
+          "alt" : "View of the play area and the various spawners, objects, and environment effects."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Attacking the monster with the saber and causing the hit animation.",
+        "image" : {
+          "src" : "../images/projects/vrgame/saberattack.png",
+          "alt" : "Attacking the monster with the saber and causing the hit animation."
+        }
+      },
+      {
+        "title" : "",
+        "text" : "",
+        "caption" : "Firing animation of gun and the hit effect on the monster.",
+        "image" : {
+          "src" : "../images/projects/vrgame/gunshot.png",
+          "alt" : "Firing animation of a gun and the hit effect on the monster."
+        }
+      }
+    ]
+  },
+  {
+    "type" : "project",
+    "slug" : "galaxy-gauntlet",
+    "title" : "Galaxy Gauntlet",
+    "description" : "A small video game created to learn Unreal Engine and basics to video game development.",
+    "task" : ["Learn a game engine", "Build a playable game", "Create a nice visual experience"],
+    "skills": ["Unreal Engine", "C++", "Game Design"],
+    "long-desc" : "Galaxy Gauntlet is a small game that I created for a final in college. The project needed to meet a few criteria, but overall was open ended. The reasoning behind building a game was to learn more about game development and gain experience with Unreal Engine. I had limited time to complete the project, so I decided to go with an endless runner style game. Galaxy Gauntlet showcases random terrain generation, a visually appealing environment, player health, power ups, and score mechanisms. Gameplay is quite simple: keyboard to move left and right, and spacebar to jump. The player runs forward at a constant speed and must avoid dangerous terrain. While moving they can run through power ups that grant them abilities for a set time. The farther a player runs, the higher their score will be. The game ends when the player loses all their health or collides with an object.<br><br>To create the game I used a variety of tutorials and resources found online. The Unreal Marketplace had a nice variety of free assets and starter content that gave me a nice base to expand upon. Most of the development involved using the blueprinting system built into Unreal, as well as extending certain classes using C++.<br><br>This project was a great introduction to Unreal Engine and game development. The video below is a short demo of the project.",
+    "image" : {
+      "src" : "../images/projects/galaxygauntlet/galaxygauntlet-main.png",
+      "alt" : "Gameplay of Galaxy Gauntlet game"
+    },
+    "video" : {
+      "src" : "https://www.youtube.com/embed/BmjiTYJBkCc",
+      "title" : "Galaxy Gauntlet - Unreal Engine"
+    },
+    "detail" : [
+  
+    ]
+  },
+  {
+    "type" : "project",
     "slug" : "led-stars",
     "title" : "Fiber Optic Strand Star Photos",
     "description" : "A more hands-on project where I use astrophotography images plus fiber optic strands to create a different type of starscape experience. After proof of concept, I explore the possibility of using astro libraries to generate star maps for future pieces.",
@@ -157,87 +241,45 @@
     ]
   },
   {
-    "type" : "project",
-    "slug" : "vr-game",
-    "title" : "VR Wave Survival Game",
-    "description" : "An exploration in virtual reality game development and the power of VR devices.",
-    "task" : ["Explore the power of VR", "Build a VR Game", "Use locomotion and controller tracking"],
-    "skills": ["Unreal Engine", "C++", "Game Design"],
-    "long-desc" : "This game was part of a final project for a grad level course that I took in college. Part of the final was writing a paper that discussed the development and final product of the project. The abstract of the <a target=\"_blank\" href=\"../VR_Final_Project_Isaac_Schwab.pdf\">paper</a> and a video are below.<br><br><i>\"The goal of this project was to build a virtual reality wave survival game. The game is an immersive experience that showcases the current generation of virtual reality systems like the HTC Vive. The gameplay involves a player defending against waves of attacking enemy monsters. The player can interact with beam rifles and lightsabers to attack the oncoming enemies. A realistic environment was created to help immerse the player in the experience. Room scale is built into the game, thus allowing the player to use slight locomotion to avoid enemy attacks. The incorporation of fast paced waves and player movement, not only create a mentally stimulating game, but lead to a substantially physical experience for the users. The combination of mental and physical interaction in this game creates an immersive, enjoyable experience. This type of game truly showcases the power of the HTC Vive and the current state of virtual reality.\"</i><br><br>I really enjoyed building this game, and spent a lot of time working on it. The video recording below doesn’t give the game justice, the video resolution is poor, I couldn’t capture the sound, and to truly experience it as intended, you need a VR headset. The video should at least showcase the features of the game. I will also attach some screenshots I took while building the game. I will try and record a better video with sound once I have an area to set up my VR headset.",
-    "image" : {
-      "src" : "../images/projects/vrgame/vrgame-main.png",
-      "alt" : "Player perspective in VR game, attacking a monster"
+    "type" : "work",
+    "slug" : "sugartown",
+    "title" : "Sugartown",
+    "description" : "Sugartown is a Web3 gaming platform and transmedia IP, created by Zynga Web3.",
+    "task" : ["Bring fun and value to the web3 space", "Build a platform for games and competitions", "Create value for Sugartown Ora NFT holders"],
+    "skills": ["React Typescript", "TailwindCSS", "wagmi & viem", "Go"],
+    "long-desc" : "Sugartown is Zynga's first game platform that is accessed by owning it's first NFT collection, <a target=\"_blank\" href=\"https://opensea.io/collection/sugartownoras\">Oras</a>. As lead of the Sugartown platform front end, <a target=\"_blank\" href=\"https://sugar.town\">Sugartown</a>, I was the main engineer building the website. This involved constant collaboration with other Engineers, Product Managers, and designers. The website is built on React Typescript, and uses wagmi & viem to manage the blockchain interactions. Animations are handled using framer-motion and css. A large component of the games platform is the actual integration of games! I worked on integrating Unity WebGL games within the React application. This involves 2-way communication with Unity and React. I also led the Unity map development for the landing page of Sugartown. <br/> <br/>The Sugartown platform was built to run game events. Each event has leaderboards and winners are selected based on players' standings. A variety of metrics and player game data are captured to allow unique rewards. The platform is tightly coupled with a variety of backend systems: Traditional REST APIs built in Go, game servers to validate client gameplay, and systems to manage blockchain data.<br/> <br/>The first two games launched are NGMI and All Time Heights. Keep an eye out for more games in the future! Check out some clips and images below.",
+    "icon" : {
+      "src" : "../images/work/sugartown/sugartown.svg",
+      "alt" : "Icon of Sugartown logo"
     },
+    "image" : {
+      "src" : "../images/work/sugartown/SugartownHomebase.png",
+      "alt" : "Landing page of Sugartown"
+    },
+    "url" : "https://sugar.town",
     "video" : {
-      "src" : "https://www.youtube.com/embed/22960wVEV5U",
-      "title" : "Virtual Reality Wave Survival Game - Unreal Engine"
+      "src" : "https://www.youtube.com/embed/oEbHt_ClCaw",
+      "title" : "Sugartown - Homebase"
+    },
+    "video2" : {
+      "src" : "https://www.youtube.com/embed/wCtmtbH6rOo",
+      "title" : "Sugartown - NGMI Sample"
     },
     "detail" : [
       {
-        "title" : "",
-        "text" : "",
-        "caption" : "Blueprint programming for the main gamemode in the game.",
+        "caption" : "Sugartown homebase and map",
         "image" : {
-          "src" : "../images/projects/vrgame/gamemode.PNG",
-          "alt" : "Blueprint programming for the main gamemode in the game."
+          "src" : "../images/work/sugartown/SugartownHomebase.png",
+          "alt" : "Sugartown homebase and map"
         }
       },
       {
-        "title" : "",
-        "text" : "",
-        "caption" : "Editor view of the game level landscape.",
+        "caption" : "Winners of a Sugartown event",
         "image" : {
-          "src" : "../images/projects/vrgame/landscape.PNG",
-          "alt" : "Editor view of the game level landscape."
-        }
-      },
-      {
-        "title" : "",
-        "text" : "",
-        "caption" : "View of the play area and the various spawners, objects, and environment effects.",
-        "image" : {
-          "src" : "../images/projects/vrgame/effectsobjects.PNG",
-          "alt" : "View of the play area and the various spawners, objects, and environment effects."
-        }
-      },
-      {
-        "title" : "",
-        "text" : "",
-        "caption" : "Attacking the monster with the saber and causing the hit animation.",
-        "image" : {
-          "src" : "../images/projects/vrgame/saberattack.png",
-          "alt" : "Attacking the monster with the saber and causing the hit animation."
-        }
-      },
-      {
-        "title" : "",
-        "text" : "",
-        "caption" : "Firing animation of gun and the hit effect on the monster.",
-        "image" : {
-          "src" : "../images/projects/vrgame/gunshot.png",
-          "alt" : "Firing animation of a gun and the hit effect on the monster."
+          "src" : "../images/work/sugartown/SugartownWinners.png",
+          "alt" : "Winners of a Sugartown event"
         }
       }
-    ]
-  },
-  {
-    "type" : "project",
-    "slug" : "galaxy-gauntlet",
-    "title" : "Galaxy Gauntlet",
-    "description" : "A small video game created to learn Unreal Engine and basics to video game development.",
-    "task" : ["Learn a game engine", "Build a playable game", "Create a nice visual experience"],
-    "skills": ["Unreal Engine", "C++", "Game Design"],
-    "long-desc" : "Galaxy Gauntlet is a small game that I created for a final in college. The project needed to meet a few criteria, but overall was open ended. The reasoning behind building a game was to learn more about game development and gain experience with Unreal Engine. I had limited time to complete the project, so I decided to go with an endless runner style game. Galaxy Gauntlet showcases random terrain generation, a visually appealing environment, player health, power ups, and score mechanisms. Gameplay is quite simple: keyboard to move left and right, and spacebar to jump. The player runs forward at a constant speed and must avoid dangerous terrain. While moving they can run through power ups that grant them abilities for a set time. The farther a player runs, the higher their score will be. The game ends when the player loses all their health or collides with an object.<br><br>To create the game I used a variety of tutorials and resources found online. The Unreal Marketplace had a nice variety of free assets and starter content that gave me a nice base to expand upon. Most of the development involved using the blueprinting system built into Unreal, as well as extending certain classes using C++.<br><br>This project was a great introduction to Unreal Engine and game development. The video below is a short demo of the project.",
-    "image" : {
-      "src" : "../images/projects/galaxygauntlet/galaxygauntlet-main.png",
-      "alt" : "Gameplay of Galaxy Gauntlet game"
-    },
-    "video" : {
-      "src" : "https://www.youtube.com/embed/BmjiTYJBkCc",
-      "title" : "Galaxy Gauntlet - Unreal Engine"
-    },
-    "detail" : [
-  
     ]
   },
   {

@@ -5,7 +5,9 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { item } from "./img-basic.module.scss"
 
 const ImgBasic = (props) => {
+  
   const { image } = props
+  console.log(image)
   return (
     <div className={item}>
       <GatsbyImage image={image.src.childImageSharp.gatsbyImageData} alt={image.alt} />
